@@ -5,10 +5,10 @@ import Dropdown from '../assets/images/dropdown.png';
 
 function Header() {
   return (
-    <div className='flex justify-between h-20 items-center pl-4 pr-4 border lg:pl-20 lg:pr-20'>
+    <div className=' fixed w-full flex justify-between h-20 items-center pl-4 pr-4 border lg:pl-20 lg:pr-20'>
         <div className='flex gap-1 items-center'>
             <div> <img src={Logo} alt='logo' className='w-16 h-16' /> </div>
-            <div className='text-3xl font-bold text-[#130e1c]'>Vinera</div>
+            <div className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-green-500 to-green-800'>Vinera</div>
         </div>
         <div className='flex gap-5'>
             {/* Code for dropdown */}
