@@ -16,3 +16,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hover-color-change:hover {
+  background: linear-gradient(to bottom right, #15803d, #dcfce7);
+}
+
+.hover-color-change {
+  background: linear-gradient(to bottom right, #15803d, #dcfce7);
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-color-change:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #dcfce7, #15803d);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.hover-color-change:hover:before {
+  opacity: 1;
+}
