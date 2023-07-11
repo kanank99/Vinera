@@ -41,11 +41,11 @@ function Partners() {
   ];
 
   return (
-    <div className='bg-green-100 pt-16 pb-16'>
+    <div className='bg-[#313435] pt-16 pb-16 rounded-t-[4em]'>
       <h1 className="text-2xl font-bold mb-4">OUR PARTNERS</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="flex flex-wrap justify-around items-center">
         {partners.map((partner) => (
-          <div key={partner.id} className="flex flex-col items-center">
+          <div key={partner.id} className="flex flex-col items-center m-2">
             <img src={partner.logo} alt={partner.name} className="w-32 h-32 object-contain mb-2" />
           </div>
         ))}
