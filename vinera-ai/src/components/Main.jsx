@@ -36,9 +36,9 @@ function Main() {
     backgroundColor: 0xf7f7f7,
     color1: 0x1f7019,
     color2: 0x148dca,
-    birdSize: 2.00,
+    birdSize: 5.00,
     speedLimit: 7.00,
-    quantity: 2.00
+    quantity: 1.00
   })
 
 
@@ -60,7 +60,7 @@ function Main() {
 
   return (
     <>
-      <div className='relative vanta font-display flex justify-center items-center h-[100dvh]'>
+      <div className='overflow-hidden	 relative vanta font-display flex justify-center items-center h-[100dvh] min-h-[100dvh]'>
         <div className='z-20 flex flex-col justify-center items-center sm:gap-14'>              <p className='text-4xl h-60 sm:text-6xl leading-snug sm:leading-snug font-bold text-center w-[90%] pt-10'>Develop <span className='text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800'>AI</span> Powered <span className='text-transparent bg-clip-text bg-gradient-to-t from-green-800 to-green-100'>Automated</span> <br /> <span ref={ele} /></p>
           <p className='text-center leading-snug w-[90%] text-2xl font-normal' >Leverage Vinera AI to <span className='font-semibold'>automate tasks</span>, eradicate manual work, and achieve <span className='font-semibold'>significant cost savings</span>.</p>
           <div className='text-center leading-snug w-[90%] text-2xl font-normal flex justify-center items-center gap-2 pt-14 sm:pt-0' >

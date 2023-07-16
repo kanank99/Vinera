@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
-import Partners from './components/Partners';
+// import Partners from './components/Partners';
 import Whyus from './components/Whyus';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Main />
       <Whyus />
-      <Partners />
+      {/* <Partners /> */}
     </div>
   );
 }
