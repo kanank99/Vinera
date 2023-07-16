@@ -23,11 +23,12 @@ function Whyus() {
   }, [])
 
   return (
-    <div className='whyusdiv flex lg:flex-col lg:gap-24 items-center justify-center relative h-[100dvh] min-h-[900px] bg-[#151315] font-display'>
-      {/* <div className='glowing-item absolute left-[50%] translate-x-[-50%] translate-y-[500px]'></div>
-        <div className='glowing-item-2 absolute left-[50%] translate-x-[-50%] translate-y-[700px]'></div> */}
+    <div className='whyusdiv flex lg:flex-col lg:gap-24 items-center justify-center relative h-[100dvh] min-h-[900px] bg-[#060606] font-display'>
+      <div className='glowing-item absolute left-[75%] translate-x-[-50%] translate-y-[100px]'></div>
+      <div className='glowing-item absolute left-[50%] translate-x-[-50%] translate-y-[100px]'></div>
+        <div className='glowing-item-2 absolute left-[25%] translate-x-[-50%] translate-y-[1px]'></div>
       <div className='hidden lg:block lg:text-[#f7f7f7] lg:text-5xl lg:w-full'>
-        <p className='font-bold'>WHY <span className='underline-curve relative text-transparent bg-clip-text bg-gradient-to-b from-green-900 to-green-400'>CHOOSE</span> US?</p>
+        <p className='font-bold'>WHY <span className='relative text-transparent bg-clip-text bg-gradient-to-b from-green-900 to-green-400'>CHOOSE</span> US?</p>
       </div>
       <div id='cards'>
         <div className='card'>

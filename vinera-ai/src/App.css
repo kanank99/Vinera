@@ -29,17 +29,49 @@
 }
 
 .glowing-item {
-  -webkit-box-shadow:0px 0px 500px 200px rgba(45,255,196,0.30);
-  -moz-box-shadow: 0px 0px 500px 200px rgba(45,255,196,0.30);
-  box-shadow: 0px 0px 500px 200px rgba(45,255,196,0.30);
+  box-shadow: 0px 0px 900px 300px rgba(45,255,196,0.04);
 }
 
 .glowing-item-2 {
-  -webkit-box-shadow:0px 0px 800px 200px rgba(45,255,196,0.30);
-  -moz-box-shadow: 0px 0px 800px 200px rgba(45,255,196,0.30);
-  box-shadow: 0px 0px 800px 200px rgba(45,255,196,0.30);
+  box-shadow: 0px 0px 900px 300px rgba(45,255,196,0.04);
 }
 
+.glowing-item-integrations {
+  box-shadow: 0px 0px 300px 90px rgba(7, 128, 93, 1);
+  /* background:linear-gradient(rgba(108, 56, 255, 0.8) 0%, rgba(181, 154, 255, 0.8) 100%) */
+}
+
+.corner-shadows {
+  background:linear-gradient( to right, #060606, transparent 60px, transparent calc(100% - 60px), #060606 100% );
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* linear-gradient( to right, var(--bg), transparent var(--size), transparent calc(100% - var(--size)), var(--bg) 100% ); */
+
+.ripple-animation {
+  animation: ripple 1.5s linear infinite;
+}
+
+/* ripple effect */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(green, 0.1),
+                0 0 0 20px rgba(green, 0.1),
+                0 0 0 40px rgba(green, 0.1),
+                0 0 0 60px rgba(green, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(green, 0.1),
+                0 0 0 40px rgba(green, 0.1),
+                0 0 0 60px rgba(green, 0.1),
+                0 0 0 80px rgba(green, 0);
+  }
+}
 
 .underline-curve::after {
   content: "";
@@ -102,14 +134,14 @@
 
 .card::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-   rgba(255, 255, 255, 0.08), 
+   rgba(255, 255, 255, 0.13), 
    transparent 40%);
    z-index: 3;
 }
 
 .card > .card-border {
-  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-   rgba(255, 255, 255, 0.06), 
+  background: radial-gradient(1200px circle at var(--mouse-x) var(--mouse-y),
+   rgba(255, 255, 255, 0.1), 
    transparent 20%);
     z-index: 1;
 }
@@ -161,6 +193,102 @@
   }
 
  }
+
+.noShow {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(100px);
+  transition: all 1s;
+}
+
+.noShowBall {
+  opacity: 0;
+  scale: 0;
+  visibility: hidden;
+  transition: all 1.2s;
+  transform: blur(10px);
+}
+
+.noShowText {
+  opacity: 0;
+  scale: 0;
+  visibility: hidden;
+  transition: all 1.2s;
+  transform: blur(10px);
+  transform: translateY(200px);
+}
+
+.scaleUp {
+  opacity: 1;
+  scale: 1;
+  transform: blur(0px);
+  visibility: visible;
+}
+
+.slideUp {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0px);
+  visibility: visible;
+}
+
+.ball:nth-child(1) {
+  transition-delay: 1200ms;
+}
+
+.ball:nth-child(2) {
+  transition-delay: 50ms;
+}
+
+.ball:nth-child(3) {
+  transition-delay: 1000ms;
+}
+
+
+.ball:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+.ball:nth-child(5) {
+  transition-delay: 600ms;
+}
+
+.ball:nth-child(6) {
+  transition-delay: 400ms;
+}
+
+.ball:nth-child(7) {
+  transition-delay: 200ms;
+}
+
+.ball:nth-child(8) {
+  transition-delay: 400ms;
+
+}
+
+.ball:nth-child(9) {
+  transition-delay: 600ms;
+}
+
+.ball:nth-child(10) {
+  transition-delay: 800ms;
+}
+
+.ball:nth-child(11) {
+  transition-delay: 1000ms;
+}
+
+.text1 {
+  transition-delay: 1200ms;
+}
+
+.text2 {
+  transition-delay: 1500ms;
+}
+
+.text3 {
+  transition-delay: 1800ms;
+}
 
 /* .card::before {
   content: "";
