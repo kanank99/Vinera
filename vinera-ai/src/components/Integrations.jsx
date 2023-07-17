@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import '../App.css';
-import Plus from '../assets/images/plus-icon.svg';
+// import Plus from '../assets/images/plus-icon.svg';
 import Facebook from '../assets/images/facebook-icon.svg';
 import Mailchimp from '../assets/images/mailchimp-icon.svg';
 import Gmail from '../assets/images/gmail-icon.svg';
@@ -10,6 +10,7 @@ import Slack from '../assets/images/slack-icon.svg';
 import Sheets from '../assets/images/sheets-icon.png';
 import Youtube from '../assets/images/youtube-icon.svg';
 import Twitter from '../assets/images/twitter-icon.svg';
+import Vinera from '../assets/images/vineraVblack.png';
 
 function Integrations() {
 
@@ -20,9 +21,9 @@ function Integrations() {
                 entry.target.classList.add('scaleUp');
                 return;
             }
-            else {
-                entry.target.classList.remove('scaleUp');
-            }
+            // else {
+            //     entry.target.classList.remove('scaleUp');
+            // }
         });
     });
 
@@ -37,9 +38,9 @@ function Integrations() {
                 entry.target.classList.add('slideUp');
                 return;
             }
-            else {
-                entry.target.classList.remove('slideUp');
-            }
+            // else {
+            //     entry.target.classList.remove('slideUp');
+            // }
         });
     });
 
@@ -47,13 +48,32 @@ function Integrations() {
     hiddenElements2.forEach((element) => {
         observerSlideUp.observe(element);
     });
+
+    // const observerBreathe = new IntersectionObserver((entries) => {
+    //     entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('breathe');
+    //             return;
+    //         }
+    //         else {
+    //             entry.target.classList.remove('breathe');
+    //         }
+    //     });
+    // });
+
+    // const hiddenElements3 = document.querySelectorAll('.noBreathe');
+    // hiddenElements3.forEach((element) => {
+    //     observerBreathe.observe(element);
+    // });
     }, []);
 
+
+
   return (
-    <div className='bg-[#060606] min-h-[500px]'>
+    <div className='bg-[#060606] min-h-[500px] font-display'>
         <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
         <div className='w-full h-full'>
-            <div className='max-w-7xl mx-auto py-16 px-4 sm:py-24 lg:px-8 flex flex-col '>
+            <div className='max-w-7xl mx-auto py-16 sm:py-24 lg:px-8 flex flex-col '>
                 <div className='relative flex flex-row justify-center items-center gap-3 lg:gap-5 py-20'>
                     <div className='corner-shadows'></div>
                     <div className='noShowBall ball glowing-item-integrations absolute'></div>
@@ -69,9 +89,9 @@ function Integrations() {
                     <div className='noShowBall ball flex items-center justify-center h-20 w-20 lg:h-32 lg:w-32 rounded-full bg-white opacity-[0.80] text-white'>
                         <img src={Mailchimp} alt='mailchimp-icon' className='w-10 h-10 lg:w-20 lg:h-20 scale-125' />
                     </div>
-                    <div className='noShowBall ball flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 rounded-full bg-green-800 text-white'>
-                        <div className='flex items-center justify-center h-[69px] w-[69px] lg:h-28 lg:w-28 rounded-full bg-gradient-to-b from-green-600 to-green-500 text-white'>
-                            <img src={Plus} alt='plus-icon' className='h-14 w-14 lg:w-20 lg:h-20' />
+                    <div className='noShowBall ball flex items-center justify-center h-24 w-24 lg:h-40 lg:w-40 rounded-full bg-gradient-to-tr from-green-600 to-green-900 text-white'>
+                        <img src={Vinera} alt='vinera-icon' className='w-16 h-16 lg:w-28 lg:h-28 lg:scale-150' />
+                        <div className='space flex items-center justify-center rounded-full bg-gradient-to-bl from-green-400 to-green-700 text-white'>
                         </div>
                     </div>
                     <div className='noShowBall ball flex items-center justify-center h-20 w-20 lg:h-32 lg:w-32 rounded-full bg-white opacity-[0.80] text-white'>
@@ -88,9 +108,9 @@ function Integrations() {
                     </div>
                 </div>
                 <div className='text-center'>
-                    <h2 className='noShowBall noShowText textSlide text1 text-lg font-semibold text-green-600 tracking-wide uppercase'>Integrations</h2>
+                    <h2 className='noShowBall noShowText textSlide text1 text-lg lg:text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-800 tracking-widest uppercase mb-6'>Integrations</h2>
                     <p className='noShowBall noShowText textSlide text2 mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-5xl'>Dozens of Automations. Endless possibilities.</p>
-                    <p className='noShowBall noShowText textSlide text3 max-w-xl mt-5 mx-auto text-xl text-gray-300'>We seamlessly integrate and deploy chatbot solutions into your existing systems and platforms</p>
+                    <p className='noShowBall noShowText textSlide text3 max-w-xl mt-5 mx-auto text-xl tracking-wide text-gray-300'>We seamlessly integrate and deploy chatbot solutions into your existing systems and platforms</p>
                 </div>
             </div>
         </div>
