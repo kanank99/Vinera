@@ -4,6 +4,7 @@ import Main from './components/Main';
 // import Partners from './components/Partners';
 import Whyus from './components/Whyus';
 import Integrations from './components/Integrations';
+import OurTeam from './components/OurTeam';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Main />
       <Whyus />
       <Integrations />
+      <OurTeam />
       {/* <Partners /> */}
     </div>
   );

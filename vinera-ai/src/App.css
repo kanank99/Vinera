@@ -40,6 +40,54 @@
   z-index: 1;
 }
 
+.rgba {
+  background-color: rgba(46, 204, 113, 0.17); 
+}
+
+.screen-overlay {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  background-size: 100% 9px;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  animation: pan-overlay 20s linear infinite;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.screen-overlay:hover {
+  animation: pan-overlay 38s linear infinite;
+}
+
+
+@keyframes pan-overlay {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0% -100%;
+  }
+}
+
+.screen-content {
+  border: 1px solid #15803d80;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.screen-content:hover {
+  border: 1px solid green;
+  scale: 1.02;
+}
+
 .glowing-item {
   box-shadow: 0px 0px 900px 300px rgba(45,255,196,0.04);
 }
