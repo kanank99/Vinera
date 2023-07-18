@@ -1,0 +1,16 @@
+ <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<g id="Layer_1">
+	<path d="M25,38c7.168,0,13-5.832,13-13s-5.832-13-13-13s-13,5.832-13,13S17.832,38,25,38z M25,14c6.065,0,11,4.935,11,11
+		s-4.935,11-11,11s-11-4.935-11-11S18.935,14,25,14z" id="id_110" style="fill: rgb(247, 247, 247);"></path>
+	<rect x="24" y="1" width="2" height="7" id="id_111" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="24" y="42" width="2" height="7" id="id_112" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="42" y="24" width="7" height="2" id="id_113" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="1" y="24" width="7" height="2" id="id_114" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="35.996" y="9.505" transform="matrix(0.7071 -0.7071 0.7071 0.7071 4.1413 31.0062)" width="7" height="2" id="id_115" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="7.004" y="38.496" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -24.852 18.9973)" width="7" height="2" id="id_116" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="38.496" y="35.995" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.3595 39.4958)" width="2" height="7" id="id_117" style="fill: rgb(247, 247, 247);"></rect>
+	<rect x="9.504" y="7.004" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.3511 10.5042)" width="2" height="7" id="id_118" style="fill: rgb(247, 247, 247);"></rect>
+</g>
+<g>
+</g>
+</svg>
