@@ -32,8 +32,8 @@ function Main(props) {
     scaleMobile: 1.00,
     // if props.darkMode is true, change background color to black, else change to white
     backgroundColor: props.darkMode ? 0x000212 : 0xf7f7f7,
-    color1: 0x1f7019,
-    color2: 0x148dca,
+    color1:props.darkMode ? 0x3f3ecf : 0x1f7019,
+    color2: props.darkMode ? 0x240087 : 0x148dca,
     birdSize: 5.00,
     speedLimit: 7.00,
     quantity: 1.00
@@ -69,10 +69,10 @@ function Main(props) {
             <p className='tracking-tight text-base place-self-end dark:text-[#b4bcd0]'>(based on client reviews)</p>
           </div>
           <div className='flex gap-10'>
-            <div className='glow-button mt-20 sm:mt-0 text-xl p-3 rounded-xl h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center bg-gradient-to-tr from-[#15803d] to-[#dcfce7] dark:text-[#f7f7f7] dark:from-blue-500 dark:via-[#4356746E] dark:to-purple-600'>
+            <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} mt-20 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center bg-gradient-to-tr from-[#15803d] to-[#dcfce7] dark:text-[#f7f7f7] dark:from-blue-500 dark:via-[#4356746E] dark:to-purple-600`}>
               <div className='relative z-10 font-semibold'>GET STARTED</div>
             </div>
-            <div className='glow-button mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-xl h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2'>
+            <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
               <div className='relative z-10 font-semibold'>Learn More</div>
             </div>
           </div>

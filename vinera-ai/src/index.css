@@ -46,3 +46,7 @@ code {
 .glow-button:hover {
   box-shadow: 1px -1px 10px #166534, -1px 1px 10px #166534;
 }
+
+.glow-button-dark:hover {
+  box-shadow: 1px -1px 10px #9333ea, -1px 1px 10px #3b82f6;
+}
