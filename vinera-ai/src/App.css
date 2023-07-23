@@ -44,6 +44,10 @@
   z-index: 1;
 }
 
+.light-bg {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
 .rgba {
   background-color: rgba(46, 204, 113, 0.2); 
 }
@@ -134,6 +138,14 @@
   background: radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), rgba(255, 255, 255, 0));
 } */
 
+.dark-testing-main {
+  background: radial-gradient(ellipse at center -10000px, rgba(120,119,198,1) 0%, rgba(0,2,18,1) 75%)
+  no-repeat;
+  rotate: 80deg;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
 .dark-testing {
   background: radial-gradient(ellipse at center -10000px, rgba(120,119,198,1) 0%, rgba(0,2,18,1) 75%)
   no-repeat;
@@ -223,7 +235,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;  
-  max-width: 916px;
+  max-width: 1206px;
   width: calc(100% - 20px);
   justify-content: center;
 }
@@ -235,7 +247,7 @@
 .card {
   height: 260px;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.18);
   cursor: pointer;
   position: relative;
   border-radius: 10px;
@@ -261,7 +273,7 @@
 
 .card::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-   rgba(255, 255, 255, 0.13), 
+   rgba(255, 255, 255, 0.17), 
    transparent 40%);
    z-index: 3;
 }

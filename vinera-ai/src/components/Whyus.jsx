@@ -23,7 +23,7 @@ function Whyus(props) {
   }, [])
 
   return (
-      <div className={`whyusdiv flex lg:flex-col lg:gap-24 items-center justify-center relative h-[100dvh] min-h-[900px] ${props.darkMode ? "dark-testing-2" : "light-testing-2"}  font-display`}>
+      <div className={`whyusdiv flex lg:flex-col lg:gap-24 items-center justify-center relative h-[100dvh] min-h-[900px] ${props.darkMode ? "dark-testing-2" : "light-bg"}  font-display z-40`}>
         <div className='hidden lg:block lg:text-[#f7f7f7] lg:text-5xl lg:w-full'>
           <p className='font-bold'>WHY <span className='relative text-transparent bg-clip-text bg-gradient-to-b from-green-900 to-green-400 dark:from-blue-500 dark:via-[#435674] dark:to-purple-600'>CHOOSE</span> US?</p>
         </div>

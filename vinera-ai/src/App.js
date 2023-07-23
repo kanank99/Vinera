@@ -6,6 +6,7 @@ import Main from './components/Main';
 import Whyus from './components/Whyus';
 import Integrations from './components/Integrations';
 import OurTeam from './components/OurTeam';
+import Faq from './components/Faq';
 
 function App() {
 
@@ -30,6 +31,7 @@ const toggleDarkMode = () => {
       <Whyus darkMode={darkMode} />
       <Integrations darkMode={darkMode} />
       <OurTeam darkMode={darkMode} />
+      <Faq darkMode={darkMode} />
       {/* <Partners /> */}
     </div>
   );

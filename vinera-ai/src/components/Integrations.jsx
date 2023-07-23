@@ -71,7 +71,7 @@ function Integrations(props) {
 
 
   return (
-    <div className='bg-[#ffffff] dark:bg-[#000212] min-h-[500px] font-display'>
+    <div className={`${props.darkMode ? null : 'light-bg'} dark:bg-[#000212] min-h-[500px] font-display`}>
         <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
         <div className='w-full h-full'>
             <div className='max-w-7xl mx-auto py-16 sm:py-24 lg:px-8 flex flex-col '>
