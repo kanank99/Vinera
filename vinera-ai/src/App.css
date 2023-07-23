@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --card-color: rgb(23, 23, 23);
+  --card-color: rgba(23, 23, 23, 0.8);
 }
 
 .App {
@@ -273,14 +273,14 @@
 
 .card::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-   rgba(255, 255, 255, 0.17), 
+   rgba(255, 255, 255, 0.12), 
    transparent 40%);
    z-index: 3;
 }
 
 .card > .card-border {
   background: radial-gradient(1200px circle at var(--mouse-x) var(--mouse-y),
-   rgba(255, 255, 255, 0.1), 
+   rgba(255, 255, 255, 0.7), 
    transparent 20%);
     z-index: 1;
 }
