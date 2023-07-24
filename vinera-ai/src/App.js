@@ -8,6 +8,7 @@ import Integrations from './components/Integrations';
 import OurTeam from './components/OurTeam';
 import Faq from './components/Faq';
 import Calendly from './components/Calendly';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -34,6 +35,7 @@ const toggleDarkMode = () => {
       <OurTeam darkMode={darkMode} />
       <Calendly darkMode={darkMode} />
       <Faq darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
       {/* <Partners /> */}
     </div>
   );
