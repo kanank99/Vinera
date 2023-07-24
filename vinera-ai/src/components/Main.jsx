@@ -61,7 +61,7 @@ function Main(props) {
       {props.darkMode ?
       <div className='lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full lg:z-10 dark-testing-main lg:rotate-180'></div>
       : null}
-      <div className='overflow-hidden	 vanta font-display flex justify-center items-center h-[100dvh] min-h-[100dvh] dark:text-[#f7f7f7]'>
+      <div id='main' className='overflow-hidden	 vanta font-display flex justify-center items-center h-[100dvh] min-h-[100dvh] dark:text-[#f7f7f7]'>
         <div className='z-20 flex flex-col justify-center items-center sm:gap-14'> <p className='text-4xl h-60 sm:text-6xl leading-snug sm:leading-snug font-bold text-center w-[90%] pt-10 dark:text-[#f7f7f7]'>Develop <span className='text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-blue-500 dark:via-[#435674E6] dark:to-purple-600'>AI</span> Powered <span className='text-transparent bg-clip-text bg-gradient-to-t from-green-800 to-green-100 dark:from-blue-500 dark:via-[#435674E6] dark:to-purple-600'>Automated</span> <br /> <span ref={ele} /></p>
           <p className='text-center leading-snug w-[90%] text-2xl font-normal dark:text-[#b4bcd0]' >Leverage Vinera AI to <span className='font-semibold dark:text-[#f7f7f7]'>automate tasks</span>, eradicate manual work, and achieve <span className='font-semibold dark:text-[#f7f7f7]'>significant cost savings</span>.</p>
           <div className='text-center leading-snug w-[90%] text-2xl font-normal flex justify-center items-center gap-2 pt-14 sm:pt-0' >
@@ -72,12 +72,12 @@ function Main(props) {
             <p className='tracking-tight text-base place-self-end dark:text-[#b4bcd0]'>(based on client reviews)</p>
           </div>
           <div className='flex gap-10'>
-            <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} mt-20 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center bg-gradient-to-tr from-[#15803d] to-[#dcfce7] dark:text-[#f7f7f7] dark:from-blue-500 dark:via-[#4356746E] dark:to-purple-600`}>
+            <a href='#calendly' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center bg-gradient-to-tr from-[#15803d] to-[#dcfce7] dark:text-[#f7f7f7] dark:from-blue-500 dark:via-[#4356746E] dark:to-purple-600`}>
               <div className='relative z-10 font-semibold'>GET STARTED</div>
-            </div>
-            <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
+            </a>
+            <a href='#whyus' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
               <div className='relative z-10 font-semibold'>Learn More</div>
-            </div>
+            </a>
           </div>
 
         </div>

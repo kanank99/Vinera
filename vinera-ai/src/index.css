@@ -20,6 +20,10 @@
   background: rgba(0, 0, 0, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: #191c1de3;
