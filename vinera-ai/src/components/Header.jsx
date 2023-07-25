@@ -13,7 +13,7 @@ function Header(props) {
 
     return (
         <div className='header-transparency transition-all text-[#191c1d] fixed w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50'>
-            <div className='z-10'>
+            <div className='z-10 select-none'>
                 <a href='#main'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </a>
             </div>
             <div className='flex gap-5 z-10'>
@@ -34,13 +34,13 @@ function Header(props) {
                     >
                         <div className='relative z-10'>App</div>
                         {appHovering && 
-                        <div style={{position: 'absolute', top: '50px', width: '150%', backgroundColor: '#f9f9f9', color: '#000', border: '1px solid #ccc', borderRadius: '4px', padding: '2px', zIndex: '1', fontSize: '16px'}}>
-                            Coming soon!
+                        <div style={{position: 'absolute', top: '45px', width: '150%', backgroundColor: '#f9f9f9', color: '#000', border: '1px solid #ccc', borderRadius: '4px', padding: '2px', zIndex: '1', fontSize: '16px'}}>
+                            <p>Coming soon!</p>
                         </div>
                         }
                     </div>
                 </div>
-                <div className='lg:hidden cursor-pointer bg-[#19d6a752] dark:bg-gradient-to-tr dark:from-blue-500 dark:via-[#4356746E] dark:to-purple-600 p-2 rounded-xl sm:gap-2 flex justify-center items-center'>
+                <div className='lg:hidden select-none cursor-pointer bg-[#19d6a752] dark:bg-gradient-to-tr dark:from-blue-500 dark:via-[#4356746E] dark:to-purple-600 p-2 rounded-xl sm:gap-2 flex justify-center items-center' onClick={() => document.querySelector('dialog').showModal()}>
                     <img src={Menu} alt='menu' className='sm:w-6 sm:h-6 w-10 h-10' />
                 </div>
             </div>

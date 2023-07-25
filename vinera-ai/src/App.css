@@ -237,7 +237,8 @@
 }
 
 .whyusdiv {
-  min-height: 250dvh;
+  min-height: 100dvh;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -307,10 +308,6 @@
 
 
 @media (min-width: 768px) { 
-
-  .whyusdiv {
-    min-height: 100vh;
-  }
 
   #cards {
     max-width: 916px;
