@@ -8,7 +8,7 @@ import TwitterDark from '../assets/images/twitter-night-icon.svg';
 
 function OurTeam(props) {
   return (
-        <div id='team' className={`${props.darkMode ? 'dark-testing' : 'light-bg'} font-display min-h-[80dvh] box-border transition-all`}>
+        <div id='team' className={`${props.darkMode ? 'dark-testing' : 'light-bg'} font-display min-h-[80dvh] box-border transition-all pb-20 md:pb-0`}>
             {/* Code for our team */}
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <div className='flex flex-col items-center justify-center '>

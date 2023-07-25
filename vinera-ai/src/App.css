@@ -152,7 +152,17 @@
 }
 
 .dark-testing-2 {
-  background: radial-gradient(circle at center 300%, rgba(120,119,198,1) 0%, rgba(0,2,18,1) 80%)
+  background: radial-gradient(circle at center 300%, rgba(120,119,198,1) -40%, rgba(0,2,18,1) 80%)
+  no-repeat;
+}
+
+.dark-testing-middle {
+  background: radial-gradient(circle at center, rgba(120,119,198,1) -100%, rgba(0,2,18,1) 60%)
+  no-repeat;
+}
+
+.dark-testing-bottom {
+  background: radial-gradient(circle at center 300%, rgba(120,119,198,1) -120%, rgba(0,2,18,1) 80%)
   no-repeat;
 }
 

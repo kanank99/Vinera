@@ -45,10 +45,10 @@ function Faq(props) {
                 <div className='flex flex-col w-full'>
                     <div className='relative flex flex-row justify-between items-center py-7 w-full'>
                         <hr className='absolute left-0 top-0 border-[#414247] w-full' />
-                        <p className='text-3xl text-[#f7f7f7] text-left'>What is an AI chatbot?</p>
+                        <p className='text-3xl text-[#f7f7f7] text-left'>Who can benefit most from Vinera's Automation services?</p>
                         <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer3 ? '-rotate-90' : null}`} />
                     </div>
-                    <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer3 ? 'block' : 'hidden'} transition-all mb-4`}>An AI chatbot is a computer program that simulates human conversation through voice commands or text chats or both. Chatbot, short for chatterbot, is an Artificial Intelligence (AI) feature that can be embedded and used through any major messaging applications.</p>
+                    <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer3 ? 'block' : 'hidden'} transition-all mb-4`}>Vinera's Automation is ideally suited for entrepreneurs and small to medium-sized businesses seeking to fortify their operations with AI (Ex. E-commerece brands, Real Estate Agents, Multi-purpose Consultants, etc...).</p>
                 </div>
             </div>
             {/* question 4 */}
@@ -56,10 +56,10 @@ function Faq(props) {
                 <div className='flex flex-col w-full'>
                     <div className='relative flex flex-row justify-between items-center py-7 w-full'>
                         <hr className='absolute left-0 top-0 border-[#414247] w-full' />
-                        <p className='text-3xl text-[#f7f7f7] text-left'>What is an AI chatbot?</p>
+                        <p className='text-3xl text-[#f7f7f7] text-left'>Is it necessary for me to have a predefined list of automations, or can you help me identify the best options?</p>
                         <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer4 ? '-rotate-90' : null}`} />
                     </div>
-                    <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer4 ? 'block' : 'hidden'} transition-all mb-4`}>An AI chatbot is a computer program that simulates human conversation through voice commands or text chats or both. Chatbot, short for chatterbot, is an Artificial Intelligence (AI) feature that can be embedded and used through any major messaging applications.</p>
+                    <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer4 ? 'block' : 'hidden'} transition-all mb-4`}>At Vinera AI, we welcome both scenarios. If you already have a clear idea of the automations you need, that's fantastic! However, if you're unsure about the most suitable solutions for your business, rest assured that we're here to assist. Our team excels at discovering untapped potential within businesses and can guide you through an initial workshop call to identify and prioritize the most beneficial automations for your specific requirements.</p>
                 </div>
             </div>  
             {/* question 5 */}
