@@ -11,6 +11,7 @@
 ::-webkit-scrollbar-corner {
   background: rgba(255, 255, 255, 0);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgb(128, 128, 128);
   border-radius: 40px;
@@ -49,6 +50,10 @@ code {
 
 .glow-button:hover {
   box-shadow: 1px -1px 10px #166534, -1px 1px 10px #166534;
+}
+
+.glow-button-dark-princing:hover {
+  box-shadow: 1px -1px 10px #1c6beb, -1px 1px 10px #3b82f6;
 }
 
 .glow-button-dark:hover {
