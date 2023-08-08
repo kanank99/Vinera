@@ -10,6 +10,7 @@ import Faq from './components/Faq';
 import Calendly from './components/Calendly';
 import Footer from './components/Footer';
 import Pricing from './components/Pricing';
+import Steps from './components/Steps';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
     <div className="App bg-[#f7f7f7] m-0">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Main darkMode={darkMode} />
+      <Steps darkMode={darkMode} />
       <Whyus darkMode={darkMode} />
       <Integrations darkMode={darkMode} />
       <OurTeam darkMode={darkMode} />

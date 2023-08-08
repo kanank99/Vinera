@@ -3,13 +3,13 @@ import React from 'react';
 function Pricing(props) {
 
     return (
-        <div className='bg-[#000212] font-display transition-all dark-testing-top'>
+        <div id='pricing' className='bg-[#000212] font-display transition-all dark-testing-top'>
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <section class="">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">AI Plans That Understand Your Demands.</h2>
-                        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-[#b4bcd0]">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-[#b4bcd0]">Our AI Plans leverage technology, innovation, and automation to unlock lasting value and drive exponential growth for your business.</p>
                     </div>
                     <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                         {/* <!-- Pricing Card --> */}
