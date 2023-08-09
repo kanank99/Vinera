@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --card-color: rgba(23, 23, 23, 0.8);
-}
 
 .App {
   text-align: center;
@@ -565,7 +562,7 @@
 }
 
 .dark-testing-2 {
-  background: radial-gradient(circle at center 300%, rgba(120, 119, 198, 1) -40%, rgba(0, 2, 18, 1) 80%) no-repeat;
+  background: radial-gradient(circle at center 300%, rgba(120, 119, 198, 1) -1%, rgba(0, 2, 18, 1) 80%) no-repeat;
 }
 
 .dark-testing-middle {
@@ -650,7 +647,6 @@
 }
 
 .whyusdiv {
-  min-height: 100dvh;
   padding: 50px 0;
   overflow: hidden;
 }
@@ -671,7 +667,7 @@
 .card {
   height: 260px;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.18);
+  /* background-color: rgba(255, 255, 255, 0.18); */
   cursor: pointer;
   position: relative;
   border-radius: 10px;
@@ -697,20 +693,20 @@
 
 .card::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.03),
       transparent 40%);
   z-index: 3;
 }
 
 .card>.card-border {
   background: radial-gradient(1200px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.1),
       transparent 20%);
   z-index: 1;
 }
 
 .card>.card-content {
-  background-color: var(--card-color);
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
   border-radius: inherit;
   height: calc(100% - 2px);
   margin: 1px;

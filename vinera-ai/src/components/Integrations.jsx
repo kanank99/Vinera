@@ -71,7 +71,7 @@ function Integrations(props) {
 
 
     return (
-        <div className={`${props.darkMode ? null : 'light-bg'} dark:bg-[#000212] min-h-[500px] font-display`}>
+        <div id='automations' className={`${props.darkMode ? null : 'light-bg'} dark:bg-[#000212] min-h-[500px] font-display`}>
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <div className='w-full h-full'>
                 <div className='max-w-7xl mx-auto py-16 sm:py-24 lg:px-8 flex flex-col '>
@@ -108,9 +108,9 @@ function Integrations(props) {
                         </div>
                     </div>
                     <div className='text-center'>
-                        <h2 className='noShowBall noShowText textSlide text1 text-lg lg:text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-800 dark:from-blue-500 dark:to-purple-600 tracking-widest uppercase mb-6'>Integrations</h2>
-                        <p className='noShowBall noShowText textSlide text2 mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-5xl'>Dozens of Automations. Endless possibilities.</p>
-                        <p className='noShowBall noShowText textSlide text3 max-w-xl mt-5 mx-auto text-xl tracking-wide text-gray-300'>We seamlessly integrate and deploy chatbot solutions into your existing systems and platforms</p>
+                        <h2 className='noShowBall noShowText textSlide text1 text-lg lg:text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-green-800 dark:from-blue-500 dark:to-purple-600 tracking-widest uppercase mb-6'>Automations</h2>
+                        <p className='noShowBall noShowText textSlide text2 mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-5xl'>Dozens of Integrations. Endless possibilities.</p>
+                        <p className='noShowBall noShowText textSlide text3 max-w-xl mt-5 mx-auto text-xl tracking-wide text-gray-300'>We seamlessly integrate and deploy AI solutions into your existing systems and platforms.</p>
                     </div>
                 </div>
             </div>

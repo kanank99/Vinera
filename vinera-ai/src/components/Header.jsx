@@ -16,17 +16,21 @@ function Header(props) {
             <div className='z-10 select-none'>
                 <a href='#main'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </a>
             </div>
+            <div className='hidden lg:flex lg:gap-10 lg:items-center lg:justify-center z-10'>
+                <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><a href='#steps' className='tracking-tight'>Solutions</a>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
+                <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center'><a href='#team' className='tracking-tight'>Our Team</a></div>
+                <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#pricing' className='relative z-10'>Pricing</a></div>
+                <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#automations' className='relative z-10'>Automations</a></div>
+            </div>
             <div className='flex gap-5 z-10'>
                 {/* Code for dropdown */}
-                <div className='hidden sm:flex sm:gap-5 lg:gap-10 sm:items-center sm:justify-center'>
+                <div className='hidden sm:flex sm:gap-5 lg:gap-5 sm:items-center sm:justify-center'>
                     {/*Code for tailwind dark mode*/}
                     {/* <div className='flex items-center justify-center cursor-pointer' onClick={props.toggleDarkMode}>
                             {props.darkMode ? <img src={Sun} alt='sun' className='w-8 h-8 z-10' /> : <img src={Moon} alt='moon' className='w-8 h-8 z-10' />}
                         </div> */}
-                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><a href='#steps' className='tracking-tight'>Solutions</a>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
-                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center'><a href='#team' className='tracking-tight'>Our Team</a></div>
-                    <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'>
-                        <a href='#calendly' className='relative z-10'>Get Started</a>
+                    <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} relative select-none text-xl rounded-full h-full transition cursor-pointer button-gradient text-[#f7f7f7] px-6 py-1 flex justify-center items-center`}>
+                        <a href='#calendly' className='relative z-10'>Book A Demo</a>
                     </div>
                     <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} relative select-none text-xl rounded-full h-full transition cursor-pointer button-gradient text-[#f7f7f7] px-6 py-1 flex justify-center items-center`}
                         onMouseEnter={() => setAppHovering(true)}
@@ -39,6 +43,7 @@ function Header(props) {
                             </div>
                         }
                     </div>
+
                 </div>
                 <div className='lg:hidden select-none cursor-pointer button-gradient p-2 rounded-xl sm:gap-2 flex justify-center items-center' onClick={() => document.querySelector('dialog').showModal()}>
                     <img src={Menu} alt='menu' className='sm:w-6 sm:h-6 w-10 h-10' />

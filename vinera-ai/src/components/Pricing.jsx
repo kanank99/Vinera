@@ -98,7 +98,7 @@ function Pricing() {
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
                                     <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>AI-Persona refinement</span>
+                                    <span>AI-Persona development</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
@@ -137,7 +137,7 @@ function Pricing() {
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
                                     <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>Advanced AI-Driven task automation</span>
+                                    <span>Unlimited AI-Driven task automation</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
@@ -164,7 +164,7 @@ function Pricing() {
                                 <div class='enterprise-card-content-upper-text'>
                                     <span class='enterprise-card-content-upper-text-title'>
                                         Vinera
-                                        <span className='pl-2 text-transparent bg-clip-text bg-gradient-to-l from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF]'>
+                                        <span className='pl-2 text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF]'>
                                             Enterprise
                                         </span>
                                     </span>
