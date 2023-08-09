@@ -1,30 +1,32 @@
 import React from 'react';
-// import { useState } from 'react';
+import { useState } from 'react';
 import ZapierSVG from '../assets/images/zapier-svg.svg';
 import VoiceflowSVG from '../assets/images/voiceflow-svg.svg';
 import StripeSVG from '../assets/images/stripe-svg.svg';
 import BotpressSVG from '../assets/images/botpress-svg.svg';
 
-function Pricing(props) {
+function Pricing() {
+
+    const [showAnnualPricing, setShowAnnualPricing] = useState(false);
 
     return (
-        <div id='pricing' className='bg-[#000212] font-display transition-all dark-testing-top'>
+        <div id='pricing' className='bg-[#000212] font-display transition-all dark-testing-top max-w-[100dvw]'>
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <section class="">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">AI Plans That Understand Your Demands.</h2>
                         <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-[#b4bcd0]">Our AI Plans leverage technology, innovation, and automation to unlock lasting value and drive exponential growth for your business.</p>
-                        <div class="flex justify-center items-center mt-14">
-                            <label class="min-w-[3.5rem] text-md text-gray-500 mr-3 dark:text-gray-400">Monthly</label>
+                        <div class="flex justify-center items-center mt-14 ">
+                            <label class={`min-w-[3.5rem] text-md mr-3 ${showAnnualPricing ? 'text-gray-400' : 'text-[#f7f7f7]'} transition`}>Monthly</label>
 
-                            <input type="checkbox" id="hs-basic-with-description" class="relative shrink-0 w-[3.25rem] h-7 bg-gray-100 checked:bg-none checked:bg-[#5e6ad2] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 ring-1 ring-transparent focus:border-[#5e6ad2]  focus:outline-none appearance-none dark:bg-gray-700 dark:checked:bg-[#5e6ad2] dark:focus:ring-offset-gray-800
+                            <input type="checkbox" id="hs-basic-with-description" class="relative shrink-0 w-[3.25rem] h-7 bg-gray-100 checked:bg-none checked:bg-[#5e6ad2] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 ring-transparent focus:border-[#5e6ad2]  focus:outline-none appearance-none dark:bg-gray-700 dark:checked:bg-[#5e6ad2] dark:focus:ring-offset-gray-800
 
-    before:inline-block before:w-6 before:h-6 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200"  />
+    before:inline-block before:w-6 before:h-6 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200"  onChange={() => setShowAnnualPricing(!showAnnualPricing)} />
 
-                            <label class="relative min-w-[3.5rem] text-md text-gray-500 ml-3 dark:text-gray-400">
+                            <label class={`relative min-w-[3.5rem] text-md ml-3 ${showAnnualPricing ? 'text-[#f7f7f7]' : 'text-gray-400'} transition`}>
                                 Annual
-                                <span class="absolute -top-10 left-auto -right-28">
+                                <span class="absolute lg:-top-10 left-auto lg:-right-28 -right-12 -top-[3.2rem]">
                                     <span class="flex items-center">
                                         <svg class="w-14 h-8 -mr-6" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M43.2951 3.47877C43.8357 3.59191 44.3656 3.24541 44.4788 2.70484C44.5919 2.16427 44.2454 1.63433 43.7049 1.52119L43.2951 3.47877ZM4.63031 24.4936C4.90293 24.9739 5.51329 25.1423 5.99361 24.8697L13.8208 20.4272C14.3011 20.1546 14.4695 19.5443 14.1969 19.0639C13.9242 18.5836 13.3139 18.4152 12.8336 18.6879L5.87608 22.6367L1.92723 15.6792C1.65462 15.1989 1.04426 15.0305 0.563943 15.3031C0.0836291 15.5757 -0.0847477 16.1861 0.187863 16.6664L4.63031 24.4936ZM43.7049 1.52119C32.7389 -0.77401 23.9595 0.99522 17.3905 5.28788C10.8356 9.57127 6.58742 16.2977 4.53601 23.7341L6.46399 24.2659C8.41258 17.2023 12.4144 10.9287 18.4845 6.96211C24.5405 3.00476 32.7611 1.27399 43.2951 3.47877L43.7049 1.52119Z" fill="currentColor" class="fill-gray-300 dark:fill-[gray-700]" />
@@ -39,9 +41,9 @@ function Pricing(props) {
                         {/* <!-- Pricing Card --> */}
                         <div class="relative flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-xl border border-gray-100 shadow dark:border-gray-600 xl:p-8 pricing-card-background dark:text-white">
                             <h3 class="mb-4 text-3xl font-semibold">Basic</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-[#b4bcd0]">No minimum commitment. Pause or cancel anytime. Everything you need to get started.</p>
+                            <p class="text-gray-500 sm:text-lg dark:text-[#b4bcd0]">No minimum commitment. Pause or cancel anytime. Everything you need to get started.</p>
                             <div class="flex justify-center items-baseline my-8">
-                                <span class="mr-2 text-5xl font-extrabold"><span className='font-semibold'>$</span>2,000</span>
+                                <span class="mr-2 text-5xl font-extrabold"><span className='font-semibold'>$</span>{showAnnualPricing ? '1,700' : '2,000'}</span>
                                 <span class="text-gray-500 dark:text-gray-400">/month</span>
                             </div>
                             <hr class="border-gray-200 dark:border-gray-600" />
@@ -72,11 +74,11 @@ function Pricing(props) {
                             <a href="#calendly" className='lg:absolute lg:top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 lg:translate-y-[17rem] lg:w-[80%] transition text-white bg-[#5e6ad2] hover:bg-[#828fff] focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white'>Get Started with Basic</a>
                         </div>
                         {/* <!-- Pricing Card --> */}
-                        <div class="relative flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 pricing-card-background rounded-xl border-2 border-gray-100 shadow dark:border-[#5e6ad2] xl:p-8 dark:text-white">
+                        <div class="relative flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 pricing-card-background-main rounded-xl border-2 border-gray-100 shadow dark:border-[#5e6ad2] xl:p-8 dark:text-white">
                             <h3 class="mb-4 text-3xl font-semibold">Standard</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-[#b4bcd0]">Boost sales with customization, optimization, and advanced automation.</p>
+                            <p class="text-gray-500 sm:text-lg dark:text-[#b4bcd0]">Boost sales with customization, optimization, and advanced automation.</p>
                             <div class="flex justify-center items-baseline my-8">
-                                <span class="mr-2 text-5xl font-extrabold"><span className='font-semibold'>$</span>3,500</span>
+                                <span class="mr-2 text-5xl font-extrabold"><span className='font-semibold'>$</span>{showAnnualPricing ? '2,975' : '3,500'}</span>
                                 <span class="text-gray-500 dark:text-gray-400">/month</span>
                             </div>
                             <hr class="border-gray-200 dark:border-gray-600" />
@@ -114,9 +116,9 @@ function Pricing(props) {
                         {/* <!-- Pricing Card --> */}
                         <div class="lg:h-[690px] relative flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 pricing-card-background rounded-xl border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:text-white">
                             <h3 class="mb-4 text-3xl font-semibold">Pro</h3>
-                            <p class="font-light text-gray-500 sm:text-lg dark:text-[#b4bcd0]">Maximize sales potential through expert and cutting-edge automation.</p>
+                            <p class="text-gray-500 sm:text-lg dark:text-[#b4bcd0]">Maximize sales potential through expert and cutting-edge automation.</p>
                             <div class="flex justify-center items-baseline my-8">
-                                <span class="mr-2 text-5xl font-extrabold"><span className='font-semibold'>$</span>5,000</span>
+                                <span class="mr-2 text-5xl font-extrabold"><span className='font-semibold'>$</span>{showAnnualPricing ? '4,250' : '5,000'}</span>
                                 <span class="text-gray-500 dark:text-gray-400">/month</span>
                             </div>
                             <hr class="border-gray-200 dark:border-gray-600" />
@@ -151,6 +153,50 @@ function Pricing(props) {
                             <a href="#calendly" className='lg:absolute lg:top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 lg:translate-y-[17rem] lg:w-[80%] transition text-white bg-[#5e6ad2] hover:bg-[#828fff] focus:ring-4 focus:ring-primary-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:text-white'>Get Started with Pro</a>
                         </div>
                     </div>
+                    {/* <!-- Horizontal Enterprise Card --> */}
+                    <div class="enterprise-card">
+                        <div class='enterprise-card-border-1'></div>
+                        <div class='enterprise-card-border-2'></div>
+                        <div class='enterprise-card-light-1'></div>
+                        <div class='enterprise-card-light-2'></div>
+                        <div class='enterprise-card-content'>
+                            <div class='enterprise-card-content-upper'>
+                                <div class='enterprise-card-content-upper-text'>
+                                    <span class='enterprise-card-content-upper-text-title'>
+                                        Vinera
+                                        <span className='pl-2 text-transparent bg-clip-text bg-gradient-to-l from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF]'>
+                                            Enterprise
+                                        </span>
+                                    </span>
+                                    <span className='enterprise-card-content-upper-text-subtitle'>
+                                        Designed for ambitious enterprises aiming to expand securely. Vinera Enterprise delivers heightened features, extensive administrative automations, and supplementary perks.                                    </span>
+                                </div>
+                                <a href="#calendly" class='enterprise-card-content-upper-button ml-[48px]'>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#f7f7f7">
+                                        <path d="M8 1C4.13401 1 1 3.262 1 7C1 8.83211 1.75288 10.3096 2.97581 11.3401C2.22526 13.7801 2.07619 15 2.52874 15C2.93754 15 3.96564 14.2301 5.61306 12.6902C6.35802 12.8937 7.16181 13 8 13C11.866 13 15 10.6678 15 7C15 3.33217 11.866 1 8 1Z"></path>
+                                    </svg>
+                                    <span className='text-[#f7f7f7]'>Contact Sales</span>
+                                </a>
+                            </div>
+                            <div class='enterprise-card-content-lower select-none'>
+                                <div class='row'>
+                                    <div class="enterprise-card-content-lower-1-item-1"></div>
+                                    <div class="enterprise-card-content-lower-1-item-2">Personalized Automation Kickstart</div>
+                                    <div class="enterprise-card-content-lower-1-item-2">SyncAI</div>
+                                    <div class="enterprise-card-content-lower-1-item-2">Robust AI Security Measures</div>
+                                    <div class="enterprise-card-content-lower-1-item-3"></div>
+                                </div>
+                                <div class='row'>
+                                    <div class="enterprise-card-content-lower-2-item-1"></div>
+                                    <div class="enterprise-card-content-lower-2-item-2">Tailored Automation Pricing</div>
+                                    <div class="enterprise-card-content-lower-2-item-2">Dedicated Assistance Channel</div>
+                                    <div class="enterprise-card-content-lower-2-item-3"></div>
+                                    <div class="enterprise-card-content-lower-2-item-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className='pt-20'>
                         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-6 mx-auto">
                             {/* <!-- Title --> */}
@@ -173,9 +219,9 @@ function Pricing(props) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
-        </div>
+        </div >
     );
 }
 

@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div className="App bg-[#f7f7f7] m-0">
+    <div className="App bg-[#f7f7f7] m-0 max-w-[100dvw]">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Main darkMode={darkMode} />
       <Steps darkMode={darkMode} />

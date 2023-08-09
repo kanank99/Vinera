@@ -12,7 +12,7 @@ function Header(props) {
     const [appHovering, setAppHovering] = useState(false)
 
     return (
-        <div className='header-transparency transition-all text-[#191c1d] fixed w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50'>
+        <div className='header-transparency transition-all text-[#191c1d] fixed w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50 max-w-[100dvw]'>
             <div className='z-10 select-none'>
                 <a href='#main'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </a>
             </div>
