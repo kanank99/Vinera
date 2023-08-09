@@ -86,6 +86,14 @@
   top: 0px;
 }
 
+.button-gradient {
+  background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%)
+}
+
+.pricing-card-background {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+}
+
 .screen-overlay:hover {
   animation: pan-overlay 38s linear infinite;
 }

@@ -43,12 +43,12 @@ function Steps() {
         // </div>
 
         // <!-- Features -->
-        <div className='bg-[#000212] dark-testing-top'>
+        <div id='steps' className='bg-[#000212] dark-testing-top font-display'>
             <hr className='border-[#27282B] w-[90%] max-w-[1600px] m-auto' />
             <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto">
                 {/* <!-- Grid --> */}
-                <div class="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
-                    <div class="lg:col-span-1 flex flex-col justify-center items-center">
+                <div class="mt-5 lg:mt-4 grid lg:grid-cols-3 gap-8 lg:gap-12">
+                    <div class="lg:col-span-1 flex flex-col justify-center items-center mb-12 lg:mb-0">
                         <h2 class="font-bold text-2xl md:text-3xl text-gray-800 dark:text-gray-200">
                             From Discovery to Enhancement in Four Steps
                         </h2>
@@ -123,8 +123,7 @@ function Steps() {
                                         Step 4: Repeat
                                     </h3>
                                     <p class="mt-1 text-gray-600 dark:text-gray-400">
-                                        AI and automation are ever-evolving. That's why we're always seeking the right balance between functionality and aesthetics, ensuring that as your needs evolve, our solutions do too, creating delightful and efficient experiences every time.
-                                    </p>
+                                        AI and automation are ever-evolving. That's why we're always seeking the right balance between functionality, ensuring that as your needs evolve, our solutions do too, creating efficient experiences every time                                    </p>
                                 </div>
                             </div>
                             <div class="flex justify-center lg:hidden">
