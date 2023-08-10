@@ -16,7 +16,7 @@ function Pricing() {
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">AI Plans That Understand Your Demands.</h2>
-                        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-[#b4bcd0]">Our AI Plans leverage technology, innovation, and automation to unlock lasting value and drive exponential growth for your business.</p>
+                        <p class="lg:mb-5 mb-[4.85rem] font-light text-gray-500 sm:text-xl dark:text-[#b4bcd0]">Our AI Plans leverage technology, innovation, and automation to unlock lasting value and drive exponential growth for your business.</p>
                         <div class="flex justify-center items-center mt-14 ">
                             <label class={`min-w-[3.5rem] text-md mr-3 ${showAnnualPricing ? 'text-gray-400' : 'text-[#f7f7f7]'} transition`}>Monthly</label>
 
@@ -53,17 +53,17 @@ function Pricing() {
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
                                     <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>Custom 24/7 AI Chatbot for customer service</span>
+                                    <span> 24/7 AI Chatbot w/ knowledge base</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    {/* <!-- Icon --> */}
+                                    <svg class="self-start translate-y-[0.14rem] flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Automated customer service and lead generation</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
                                     <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>Automated Lead Generation</span>
-                                </li>
-                                <li class="flex items-center space-x-3">
-                                    {/* <!-- Icon --> */}
-                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>AI-Driven task automation</span>
+                                    <span>Up to 5 AI-Driven task automation</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
@@ -103,7 +103,12 @@ function Pricing() {
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
                                     <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>Integrations, APIs, Webhook</span>
+                                    <span>Up to 10 AI-Driven task automation</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    {/* <!-- Icon --> */}
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>APIs and Webhooks</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
@@ -131,12 +136,12 @@ function Pricing() {
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
-                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="self-start translate-y-[0.14rem] flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Comprehensive AI Chatbot with advanced features</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
-                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="self-start translate-y-[0.14rem] flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Unlimited AI-Driven task automation</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
@@ -162,13 +167,13 @@ function Pricing() {
                         <div class='enterprise-card-content'>
                             <div class='enterprise-card-content-upper'>
                                 <div class='enterprise-card-content-upper-text'>
-                                    <span class='enterprise-card-content-upper-text-title'>
+                                    <span class='enterprise-card-content-upper-text-title lg:text-left'>
                                         Vinera
                                         <span className='pl-2 text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF]'>
                                             Enterprise
                                         </span>
                                     </span>
-                                    <span className='enterprise-card-content-upper-text-subtitle'>
+                                    <span className='enterprise-card-content-upper-text-subtitle lg:text-left'>
                                         Designed for ambitious enterprises aiming to expand securely. Vinera Enterprise delivers heightened features, extensive administrative automations, and supplementary perks.                                    </span>
                                 </div>
                                 <a href="#calendly" class='enterprise-card-content-upper-button ml-[48px]'>

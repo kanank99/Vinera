@@ -244,7 +244,7 @@
 @media (max-width: 1090px) {
 
   .enterprise-card-content-upper {
-    padding: 40px 28px 40px 28px;
+    padding: 40px 28px 0 28px;
     display: flex;
     flex: initial;
     flex-direction: column;
@@ -337,7 +337,7 @@
   line-height: 1.4;
   letter-spacing: -0.01em;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
 }
 
 /* .enterprise-card-content-upper-title-decorated {
@@ -362,7 +362,7 @@
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.011px;
-  text-align: left;
+  text-align: center;
 }
 
 .enterprise-card-content-lower {
