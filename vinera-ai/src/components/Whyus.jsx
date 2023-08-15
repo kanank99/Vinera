@@ -74,7 +74,7 @@ function Whyus(props) {
             <div class="card-info-wrapper">
               <div class="card-info flex items-center justify-center">
                 <div class="card-info-title text-white flex flex-col gap-1 w-[90%]">
-                  <p className='text-xl font-semibold text-center'>Continued Enhancements</p>
+                  <p className='text-xl font-semibold text-center'>Continued Improvements</p>
                   <p className='text-[#8a8f98] leading-snug text-center'>We continuously improve performance and guest satisfaction through monitoring, analysis, and user feedback.</p>
                 </div>
               </div>
