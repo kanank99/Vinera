@@ -50,7 +50,7 @@ function Steps() {
                 <div class="mt-5 lg:mt-4 grid lg:grid-cols-3 gap-8 lg:gap-12">
                     <div class="lg:col-span-1 flex flex-col justify-center items-center mb-12 lg:mb-0">
                         <h2 class="font-bold text-2xl md:text-3xl text-gray-800 dark:text-gray-200">
-                            From Discovery to Enhancement in Four Steps
+                            Four-Step Journey to Success
                         </h2>
                         <p class="mt-2 md:mt-4 text-gray-500">
                             Dive deep with us as we understand your challenges, automate your processes, ensure smooth operations, and continuously refine for excellence.
@@ -87,7 +87,7 @@ function Steps() {
                                 </svg>
                                 <div class="grow">
                                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
-                                        Step 2: Automate
+                                        Step 2: Development
                                     </h3>
                                     <p class="mt-1 text-gray-600 dark:text-gray-400">
                                         Drawing from our experiences in building enterprise products and addressing common pain points across various projects, we're equipped to deliver precise automation solutions.
@@ -104,7 +104,7 @@ function Steps() {
                                 </svg>
                                 <div class="grow">
                                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
-                                        Step 3: Operate
+                                        Step 3: Testing
                                     </h3>
                                     <p class="mt-1 text-gray-600 dark:text-gray-400">
                                         Vinera's automations are designed to be simple, eliminating the complexity of your tasks. From managing enterprise databases to automating everyday tasks, we make operations seamless.
@@ -120,7 +120,7 @@ function Steps() {
                                 </svg>
                                 <div class="grow">
                                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
-                                        Step 4: Repeat
+                                        Step 4: Implementation
                                     </h3>
                                     <p class="mt-1 text-gray-600 dark:text-gray-400">
                                         AI and automation are ever-evolving. That's why we're always seeking the right balance between functionality, ensuring that as your needs evolve, our solutions do too, creating efficient experiences every time                                    </p>

@@ -115,7 +115,7 @@
   height: 346px;
   transform: translateZ(0px);
   filter: blur(150px);
-  background: rgb(168, 119, 198);
+  background: rgb(86, 72, 192);
   opacity: 0.2;
 }
 
@@ -129,7 +129,7 @@
   height: 346px;
   transform: translateZ(0px);
   filter: blur(150px);
-  background: rgb(168, 119, 198);
+  background: rgb(50, 27, 108);
   opacity: 0.2;
 }
 
@@ -878,6 +878,47 @@
   100% {
     transform: scale(2);
   }
+}
+
+.group {
+  border-bottom-color: rgb(81 95 224);
+}
+
+.savingsCard {
+  background: linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02))
+}
+
+.calcTable {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.savings-card-light-1 {
+  left: -32px;
+  top: -28px;
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  width: 618px;
+  height: 446px;
+  transform: translateZ(0px);
+  filter: blur(150px);
+  background: rgb(168, 119, 198);
+  opacity: 0.15;
+}
+
+.savings-card-light-2 {
+  right: -60px;
+  bottom: -10px;
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  width: 718px;
+  height: 546px;
+  transform: translateZ(0px);
+  filter: blur(150px);
+  background: rgb(168, 119, 198);
+  opacity: 0.15;
 }
 
 /* .card::before {

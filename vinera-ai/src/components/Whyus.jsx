@@ -58,7 +58,7 @@ function Whyus(props) {
             <div class="card-info-wrapper">
               <div class="card-info flex items-center justify-center">
                 <div class="card-info-title text-white flex flex-col gap-1 w-[90%]">
-                  <p className='text-xl font-semibold text-center'>Efficient Web Integration</p>
+                  <p className='text-xl font-semibold text-center'>Efficient Integration</p>
                   <p className='text-[#8a8f98] leading-snug text-center'>We seamlessly integrate and deploy chatbot solutions into your existing systems and platforms.</p>
                 </div>
               </div>
@@ -232,7 +232,7 @@ function Whyus(props) {
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-6 mx-auto">
           {/* <!-- Title --> */}
           <div class="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center">
-            <h2 class="text-xl text-gray-600 dark:text-gray-400 pb-12 lg:pb-0">Partnered with the best in the industry</h2>
+            <h2 class="text-xl text-gray-600 dark:text-gray-400 pb-12 lg:pb-0">Powered with the best in the industry</h2>
           </div>
           {/* <!-- End Title --> */}
 

@@ -25,7 +25,7 @@ function Pricing() {
     before:inline-block before:w-6 before:h-6 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200"  onChange={() => setShowAnnualPricing(!showAnnualPricing)} />
 
                             <label class={`relative min-w-[3.5rem] text-md ml-3 ${showAnnualPricing ? 'text-[#f7f7f7]' : 'text-gray-400'} transition`}>
-                                Annual
+                                Quarterly
                                 <span class="absolute lg:-top-10 left-auto lg:-right-28 -right-12 -top-[3.2rem]">
                                     <span class="flex items-center">
                                         <svg class="w-14 h-8 -mr-6" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">

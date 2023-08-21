@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 // import Logo from '../assets/images/1.png';
 import VineraTransparent from '../assets/images/vinera-transparent.png';
 import Menu from '../assets/images/menu.png';
@@ -15,13 +16,13 @@ function Header(props) {
         <>
             <div className='header-transparency transition-all text-[#191c1d] fixed w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50 max-w-[100dvw]'>
                 <div className='z-10 select-none'>
-                    <a href='#main'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </a>
+                    <Link to='/'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </Link>
                 </div>
                 <div className='hidden lg:flex lg:gap-10 lg:items-center lg:justify-center z-10'>
-                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><a href='#steps' className='tracking-tight'>Solutions</a>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
-                    <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#automations' className='relative z-10'>Automations</a></div>
+                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><Link to='/#steps' className='tracking-tight'>Solutions</Link>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
+                    {/* <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><Link to='/automations' className='relative z-10'>Automations</Link></div> */}
                     <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center'><a href='#team' className='tracking-tight'>Our Team</a></div>
-                    <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#pricing' className='relative z-10'>Pricing</a></div>
+                    <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#pricing' className='relative z-10'>Memberships</a></div>
                 </div>
                 <div className='flex gap-5 z-10'>
                     {/* Code for dropdown */}
@@ -62,7 +63,7 @@ function Header(props) {
                         </div>
                         <div class="ml-3">
                             <div class="text-sm text-teal-800 font-medium">
-                                You have been added to the our newsletter!
+                                You have been added to the newsletter!
                             </div>
                         </div>
                         <div class="pl-3 ml-auto">

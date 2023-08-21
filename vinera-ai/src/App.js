@@ -1,17 +1,10 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
-import Main from './components/Main';
-// import Partners from './components/Partners';
-import Whyus from './components/Whyus';
-import Integrations from './components/Integrations';
-import OurTeam from './components/OurTeam';
-import Faq from './components/Faq';
-import Calendly from './components/Calendly';
-import Footer from './components/Footer';
-import Pricing from './components/Pricing';
-import Steps from './components/Steps';
-import Newsletter from './components/Newsletter';
+import Home from './components/Home';
+import Automations from './components/Automations';
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
 
@@ -33,16 +26,10 @@ function App() {
   return (
     <div className="App bg-[#f7f7f7] m-0 max-w-[100dvw]">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />
-      <Main darkMode={darkMode} />
-      <Steps darkMode={darkMode} />
-      <Whyus darkMode={darkMode} />
-      <Integrations darkMode={darkMode} />
-      <OurTeam darkMode={darkMode} />
-      <Pricing darkMode={darkMode} />
-      <Calendly darkMode={darkMode} />
-      <Faq darkMode={darkMode} />
-      <Newsletter darkMode={darkMode} setShowAlert={setShowAlert} />
-      <Footer darkMode={darkMode} />
+      <Routes>
+        <Route path='/' element={<Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />} />
+        <Route path='/automations' element={<Automations />} />
+      </Routes>
       <dialog className=' top-0 left-0 w-full h-full  bg-transparent fixed z-[100]'>
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#161b22] rounded-2xl'>
           <div className='flex flex-col justify-around items-center h-full'>
