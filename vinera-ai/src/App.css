@@ -29,6 +29,42 @@
   color: white;
 }
 
+/* .benefits-circle-gradient-left {
+  background: radial-gradient(40% 40% at 40% 40%, #444cf722 0%, transparent -100%), radial-gradient(40% 40% at 60% 60%, #8a5dff22 0%, transparent 100%);
+  height: 900px;
+  top: 0px;
+  bottom: 0px;
+  left: -30px;
+  z-index: 1;
+  width: 600px;
+  position: absolute;
+  transform: rotate(35deg) translateX(100px) scale(2)
+}
+
+.benefits-circle-gradient-right {
+  background: radial-gradient(40% 40% at 40% 40%, #444cf722 0%, transparent 100%), radial-gradient(40% 40% at 60% 60%, #8a5dff22 0%, transparent 100%);
+  height: 900px;
+  top: 0px;
+  bottom: 0px;
+  right: 30px;
+  z-index: 1;
+  width: 600px;
+  position: absolute;
+  transform: rotate(-35deg) translateX(-500px) scale(2) translateY(570px)
+}
+
+.benefits-circle-gradient-left-2 {
+  background: radial-gradient(40% 40% at 40% 40%, #444cf722 0%, transparent -100%), radial-gradient(40% 40% at 60% 60%, #8a5dff22 0%, transparent 100%);
+  height: 900px;
+  top: 0px;
+  bottom: 0px;
+  left: -30px;
+  z-index: 1;
+  width: 600px;
+  position: absolute;
+  transform: rotate(35deg) translateX(800px) scale(2) translateY(700px)
+} */
+
 .header-transparency::before {
   content: "";
   position: absolute;
@@ -567,6 +603,15 @@
 
 .dark-testing-middle {
   background: radial-gradient(circle at center, rgba(120, 119, 198, 1) -100%, rgba(0, 2, 18, 1) 60%) no-repeat;
+}
+
+.dark-testing-middle-benefit-left {
+  background: radial-gradient(circle at left, rgba(120, 119, 198, 1) -400%, rgba(0, 2, 18, 1) 50%) no-repeat;
+
+}
+
+.dark-testing-middle-benefit-right {
+  background: radial-gradient(circle at right, rgba(120, 119, 198, 1) -400%, rgba(0, 2, 18, 1) 50%) no-repeat;
 }
 
 .dark-testing-top {

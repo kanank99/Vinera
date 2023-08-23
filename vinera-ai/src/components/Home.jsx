@@ -10,12 +10,14 @@ import SavingsCalc from './SavingsCalc';
 import Pricing from './Pricing';
 import Steps from './Steps';
 import Newsletter from './Newsletter';
+import Benefits from './Benefits';
 
 function Home(props) {
     return (
         <div>
             <Main darkMode={props.darkMode} />
             <Steps darkMode={props.darkMode} />
+            <Benefits darkMode={props.darkMode} />
             <Whyus darkMode={props.darkMode} />
             <Integrations darkMode={props.darkMode} />
             <OurTeam darkMode={props.darkMode} />
