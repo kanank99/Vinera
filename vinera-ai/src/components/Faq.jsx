@@ -75,7 +75,7 @@ function Faq(props) {
                                     <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>Is there a refund policy if I'm unsatisfied with the service?</p>
                                     <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer5 ? '-rotate-90' : null}`} />
                                 </div>
-                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer5 ? 'block' : 'hidden'} transition-all mb-4`}>Absolutely! We offer a hassle-free refund policy within 15 days of your service purchase, no questions asked. If you're unsatisfied with our service, we will gladly issue a full refund upon your request.</p>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer5 ? 'block' : 'hidden'} transition-all mb-4`}>Absolutely! We offer a hassle-free refund policy within 14 days of your service purchase, no questions asked. If you're unsatisfied with our service, we will gladly issue a full refund upon your request.</p>
                             </div>
                         </div>
 

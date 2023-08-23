@@ -41,11 +41,11 @@ function SavingsCalc() {
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <div className='max-w-screen-xl m-auto py-20'>
 
-                <p className='text-left text-4xl tracking-tight max-w-[1100px] m-auto pb-8 font-extrabold text-gray-900 dark:text-white'>Savings Calculator</p>
+                <p className='lg:text-left text-4xl tracking-tight max-w-[1100px] m-auto pb-8 font-extrabold text-gray-900 dark:text-white'>Savings Calculator</p>
 
                 <div className='relative w-full flex flex-col p-6 mx-auto max-w-[1100px] text-center text-gray-900 savingsCard rounded-xl border border-gray-100 shadow dark:border-[#5e6ad2] xl:p-8 dark:text-white'>
-                    <div class='savings-card-light-1'></div>
-                    <div class='savings-card-light-2'></div>
+                    <div class='savings-card-light-1 hidden lg:block'></div>
+                    <div class='savings-card-light-2 hidden lg:block'></div>
                     <p className='text-4xl font-semibold md:text-left pb-6'>Your Employee Cost</p>
                     <div className='flex flex-col md:flex-row w-full'>
                         <div className='w-full flex flex-col gap-6'>
