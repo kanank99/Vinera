@@ -81,7 +81,7 @@ function Main(props) {
             <a href='#calendly' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center button-gradient`}>
               <div className='relative z-10 font-semibold'>GET STARTED</div>
             </a>
-            <a href='#steps' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
+            <a href='#benefits' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
               <div className='relative z-10 font-semibold'>Learn More</div>
             </a>
           </div>

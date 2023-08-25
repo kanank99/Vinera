@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+::root {
+  --icon-size: 74px;
+}
+
 .App {
   text-align: center;
 }
@@ -964,6 +968,160 @@
   filter: blur(150px);
   background: rgb(168, 119, 198);
   opacity: 0.15;
+}
+
+.animation-box::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(270deg, #060606 0%, rgba(6, 6, 6, 0) 100%);
+  transform: rotate(-180deg);
+  will-change: transform;
+  width: 165px;
+  height: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.animation-box::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(270deg, #060606 0%, rgba(6, 6, 6, 0) 100%);
+  width: 165px;
+  height: 100%;
+  z-index: 1;
+}
+
+.animation-box-shadow-bottom {
+  position: absolute;
+  bottom: 30px;
+  background: linear-gradient(0, #060606 0%, rgba(6, 6, 6, 0) 100%);
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+}
+
+.item-row-1 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transform: translateX(0%, 0%);
+  will-change: transform;
+  animation: 38s linear 0s infinite normal backwards running translateX-1;
+}
+
+.item-row-2 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transform: translateX(50%, 0%);
+  will-change: transform;
+  animation: 28s linear 0s infinite normal backwards running translateX-2;
+}
+
+.item-row-3 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transform: translateX(80%, 0%);
+  will-change: transform;
+  animation: 32s linear 0s infinite normal backwards running translateX-3;
+}
+
+.item-row-4 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transform: translateX(20%, 0%);
+  will-change: transform;
+  animation: 22s linear 0s infinite normal backwards running translateX-4;
+}
+
+.icons-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background: linear-gradient(90deg, rgb(255, 248, 85) 0.04%, rgb(70, 227, 183) 46.04%); */
+  pointer-events: none;
+  filter: blur(0.7rem);
+  /* opacity: 0.7; */
+  overflow: visible;
+}
+
+.icons-box {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+  flex-shrink: 0;
+  border-radius: 25%;
+  overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 1px 0px inset;
+  background: linear-gradient(155.91deg, rgb(24, 25, 28) 21.92%, rgb(33, 34, 37) 77.49%);
+  margin-right: 32px;
+}
+
+.icons-img {
+  width: auto;
+  height: auto;
+  max-height: 32px;
+  max-width: 32px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+  flex-shrink: 0;
+}
+
+@keyframes translateX-1 {
+  0% {
+    transform: translateX(0%, 0%);
+  }
+
+  100% {
+    transform: translateX(calc(-100% + 0%))
+  }
+}
+
+@keyframes translateX-2 {
+  0% {
+    transform: translateX(0%, 0%);
+  }
+
+  100% {
+    transform: translateX(calc(-100% + 0%))
+  }
+}
+
+@keyframes translateX-3 {
+  0% {
+    transform: translateX(0%, 0%);
+  }
+
+  100% {
+    transform: translateX(calc(-100% + 0%))
+  }
+}
+
+@keyframes translateX-4 {
+  0% {
+    transform: translateX(0%, 0%);
+  }
+
+  100% {
+    transform: translateX(calc(-100% + 0%))
+  }
 }
 
 /* .card::before {

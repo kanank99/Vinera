@@ -4,10 +4,13 @@ import Dropdown from '../assets/images/arrow-down-icon.svg';
 
 function Faq(props) {
 
+    const [showAnswer7, setShowAnswer7] = useState(false);
     const [showAnswer1, setShowAnswer1] = useState(false);
+    const [showAnswer6, setShowAnswer6] = useState(false);
     const [showAnswer2, setShowAnswer2] = useState(false);
     const [showAnswer3, setShowAnswer3] = useState(false);
     const [showAnswer4, setShowAnswer4] = useState(false);
+    const [showAnswer8, setShowAnswer8] = useState(false);
     const [showAnswer5, setShowAnswer5] = useState(false);
 
     return (
@@ -25,16 +28,39 @@ function Faq(props) {
                             <p className='font-bold'>Frequently<br /> asked <span className='relative text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-400 dark:from-blue-500 dark:to-purple-600'>questions</span></p>
                         </div>
                         {/* question 1 */}
-                        <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer1(!showAnswer1)}>
+                        <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer7(!showAnswer7)}>
                             <div className='flex flex-col w-full'>
                                 <div className='relative flex flex-row justify-between items-center py-7 w-full'>
-                                    <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>How can Vinera AI help me?</p>
-                                    <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer1 ? '-rotate-90' : null}`} />
+                                    <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>How does the free consultation work?</p>
+                                    <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer7 ? '-rotate-90' : null}`} />
                                 </div>
-                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer1 ? 'block' : 'hidden'} transition-all mb-4`}>At Vinera AI we specialize in delivering customized AI Automation solutions that precisely align with your unique business requirements, resulting in heightened efficiency and substantial cost reductions.</p>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer7 ? 'block' : 'hidden'} transition-all mb-4`}>Our free consultation offers a chance to delve into your business's workings, its processes, current technology stack and key pain points. We also align our solutions with your overarching goals. To begin, just reach out to us.</p>
                             </div>
                         </div>
                         {/* question 2 */}
+
+                        <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer1(!showAnswer1)}>
+                            <div className='flex flex-col w-full'>
+                                <div className='relative flex flex-row justify-between items-center py-7 w-full'>
+                                    <hr className='absolute left-0 top-0 border-[#374151] w-full' />
+                                    <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>How can Vinera AI help me?</p>
+                                    <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer1 ? '-rotate-90' : null}`} />
+                                </div>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer1 ? 'block' : 'hidden'} transition-all mb-4`}>By automating, you remove monotonous tasks, enhance processes, and make decisions rooted in data, which translates to cost efficiency, optimal resource use, and a boost in profitability.</p>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer6(!showAnswer6)}>
+                            <div className='flex flex-col w-full'>
+                                <div className='relative flex flex-row justify-between items-center py-7 w-full'>
+                                    <hr className='absolute left-0 top-0 border-[#374151] w-full' />
+                                    <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>How does automation improve profitability?</p>
+                                    <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer6 ? '-rotate-90' : null}`} />
+                                </div>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer6 ? 'block' : 'hidden'} transition-all mb-4`}>Implementing Vinera AI's solutions is a seamless process facilitated by our dedicated team. We collaborate closely with you to guarantee a smooth and efficient implementation journey. Throughout the process, we offer unwavering support and guidance, ensuring that you are well-assisted at every stage.</p>
+                            </div>
+                        </div>
+
                         <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer2(!showAnswer2)}>
                             <div className='flex flex-col w-full'>
                                 <div className='relative flex flex-row justify-between items-center py-7 w-full'>
@@ -53,7 +79,7 @@ function Faq(props) {
                                     <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>Who can benefit most from Vinera's Automation services?</p>
                                     <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer3 ? '-rotate-90' : null}`} />
                                 </div>
-                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer3 ? 'block' : 'hidden'} transition-all mb-4`}>Vinera's Automation is ideally suited for entrepreneurs and small to medium-sized businesses seeking to fortify their operations with AI (Ex. E-commerece brands, Real Estate Agents, Multi-purpose Consultants, etc...).</p>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer3 ? 'block' : 'hidden'} transition-all mb-4`}>Vinera's automations is ideally suited for entrepreneurs and businesses seeking to fortify their operations with AI. (Ex. E-commerce bands, Real Estate Agents, Car Dealerships, Consultants, etc…).</p>
                             </div>
                         </div>
                         {/* question 4 */}
@@ -67,6 +93,18 @@ function Faq(props) {
                                 <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer4 ? 'block' : 'hidden'} transition-all mb-4`}>At Vinera AI, we welcome both scenarios. If you already have a clear idea of the automations you need, that's fantastic! However, if you're unsure about the most suitable solutions for your business, rest assured that we're here to assist. Our team excels at discovering untapped potential within businesses and can guide you through an initial workshop call to identify and prioritize the most beneficial automations for your specific requirements.</p>
                             </div>
                         </div>
+
+                        <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer8(!showAnswer8)}>
+                            <div className='flex flex-col w-full'>
+                                <div className='relative flex flex-row justify-between items-center py-7 w-full'>
+                                    <hr className='absolute left-0 top-0 border-[#374151] w-full' />
+                                    <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>What post-implementation support can we expect?</p>
+                                    <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer8 ? '-rotate-90' : null}`} />
+                                </div>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer8 ? 'block' : 'hidden'} transition-all mb-4`}>We provide comprehensive training to your team, equipping them to effectively use and manage the new tools. In addition, we extend continuous support and upkeep services, guaranteeing the tool's peak performance. We also keep a pulse on its performance, take feedback, and fine-tune it in line with your evolving business challenges.</p>
+                            </div>
+                        </div>
+
                         {/* question 5 */}
                         <div className='flex flex-col max-w-[950px] px-4 md:px-0 w-full cursor-pointer select-none' onClick={() => setShowAnswer5(!showAnswer5)}>
                             <div className='flex flex-col w-full'>
@@ -75,7 +113,7 @@ function Faq(props) {
                                     <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>Is there a refund policy if I'm unsatisfied with the service?</p>
                                     <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer5 ? '-rotate-90' : null}`} />
                                 </div>
-                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer5 ? 'block' : 'hidden'} transition-all mb-4`}>Absolutely! We offer a hassle-free refund policy within 14 days of your service purchase, no questions asked. If you're unsatisfied with our service, we will gladly issue a full refund upon your request.</p>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer5 ? 'block' : 'hidden'} transition-all mb-4`}>Absolutely! We offer a hassle-free refund policy within 14 days of your service delivery, no questions asked. If you're unsatisfied with our service, we will gladly issue a full refund upon your request.</p>
                             </div>
                         </div>
 

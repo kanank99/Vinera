@@ -68,7 +68,7 @@ function Pricing() {
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
                                     <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-[#6d7cff]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                    <span>Multi-Platform deployement</span>
+                                    <span>Multi-Platform deployment</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
                                     {/* <!-- Icon --> */}
@@ -80,6 +80,8 @@ function Pricing() {
                         </div>
                         {/* <!-- Pricing Card --> */}
                         <div class="relative flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 pricing-card-background-main rounded-xl border-2 border-gray-100 shadow dark:border-[#5e6ad2] xl:p-8 dark:text-white">
+                            {/* <!-- Center 'best value' --> */}
+                            <div className='absolute -top-4 h-8 left-1/2 transform -translate-x-1/2 bg-[#6d7cff] px-5 rounded-3xl text-center flex items-center justify-center text-white font-md text-lg shadow-2xl'>Best Value</div>
                             <h3 class="mb-4 text-3xl font-semibold">Standard</h3>
                             <p class="text-gray-500 sm:text-lg dark:text-[#b4bcd0]">Boost sales with customization, optimization, and advanced automation.</p>
                             <div class="flex justify-center items-baseline my-8">
