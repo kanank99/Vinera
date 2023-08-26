@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="App bg-[#f7f7f7] m-0 max-w-[100dvw]">
+    <div className="App bg-[#000212] m-0 max-w-[100dvw]">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />
       <Routes>
         <Route path='/' element={<Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />} />

@@ -46,7 +46,7 @@ function Faq(props) {
                                     <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>How can Vinera AI help me?</p>
                                     <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer1 ? '-rotate-90' : null}`} />
                                 </div>
-                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer1 ? 'block' : 'hidden'} transition-all mb-4`}>By automating, you remove monotonous tasks, enhance processes, and make decisions rooted in data, which translates to cost efficiency, optimal resource use, and a boost in profitability.</p>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer1 ? 'block' : 'hidden'} transition-all mb-4`}>At Vinera AI we specialize in delivering customized AI Automation solutions that precisely align with your unique business requirements, resulting in heightened efficiency and substantial cost reductions.</p>
                             </div>
                         </div>
 
@@ -57,7 +57,7 @@ function Faq(props) {
                                     <p className='text-lg text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400 text-left'>How does automation improve profitability?</p>
                                     <img src={Dropdown} alt='dropdown' className={`w-6 h-6 transition-all ${showAnswer6 ? '-rotate-90' : null}`} />
                                 </div>
-                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer6 ? 'block' : 'hidden'} transition-all mb-4`}>Implementing Vinera AI's solutions is a seamless process facilitated by our dedicated team. We collaborate closely with you to guarantee a smooth and efficient implementation journey. Throughout the process, we offer unwavering support and guidance, ensuring that you are well-assisted at every stage.</p>
+                                <p className={`text-[#8a8f98] leading-snug text-left ${showAnswer6 ? 'block' : 'hidden'} transition-all mb-4`}>By automating, you remove monotonous tasks, enhance processes, and make decisions rooted in data, which translates to cost efficiency, optimal resource use, and a boost in profitability</p>
                             </div>
                         </div>
 

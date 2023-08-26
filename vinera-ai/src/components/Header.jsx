@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 // import Logo from '../assets/images/1.png';
 import VineraTransparent from '../assets/images/vinera-transparent.png';
 import Menu from '../assets/images/menu.png';
+import { PopupButton } from "react-calendly";
 // import Dropdown from '../assets/images/arrow-down-icon.svg';
 // import Moon from '../assets/images/moon-icon.svg';
 // import Sun from '../assets/images/sun-icon.svg';
@@ -19,7 +20,7 @@ function Header(props) {
                     <Link to='/'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </Link>
                 </div>
                 <div className='hidden lg:flex lg:gap-10 lg:items-center lg:justify-center z-10'>
-                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><Link to='/#steps' className='tracking-tight'>Solutions</Link>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
+                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><a className='tracking-tight' href='#steps'>Solutions</a>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
                     {/* <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><Link to='/automations' className='relative z-10'>Automations</Link></div> */}
                     <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center'><a href='#team' className='tracking-tight'>Our Team</a></div>
                     <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#pricing' className='relative z-10'>Memberships</a></div>
@@ -32,7 +33,17 @@ function Header(props) {
                             {props.darkMode ? <img src={Sun} alt='sun' className='w-8 h-8 z-10' /> : <img src={Moon} alt='moon' className='w-8 h-8 z-10' />}
                         </div> */}
                         <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} relative select-none text-xl rounded-full h-full transition cursor-pointer button-gradient text-[#f7f7f7] px-6 py-1 flex justify-center items-center`}>
-                            <a href='#calendly' className='relative z-10'>Book A Demo</a>
+                            <div className='relative z-10'>
+                                <PopupButton
+                                    url="https://calendly.com/vineraautomations/discoverycall"
+                                    /*
+                                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                                    */
+                                    rootElement={document.getElementById("root")}
+                                    text="Book a Demo"
+                                />
+                            </div>
                         </div>
                         <div className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} relative select-none text-xl rounded-full h-full transition cursor-pointer button-gradient text-[#f7f7f7] px-6 py-1 flex justify-center items-center`}
                             onMouseEnter={() => setAppHovering(true)}

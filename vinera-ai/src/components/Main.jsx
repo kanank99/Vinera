@@ -3,6 +3,7 @@ import Typed from 'typed.js';
 import BIRDS from 'vanta/dist/vanta.birds.min.js'
 import StarDay from '../assets/images/star-day-icon.svg';
 import StarNight from '../assets/images/star-night-icon.svg';
+import { PopupButton } from 'react-calendly';
 
 function Main(props) {
 
@@ -79,7 +80,17 @@ function Main(props) {
           </div>
           <div className='flex gap-10'>
             <a href='#calendly' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center button-gradient`}>
-              <div className='relative z-10 font-semibold'>GET STARTED</div>
+              <div className='relative z-10 font-semibold'>
+                <PopupButton
+                  url="https://calendly.com/vineraautomations/discoverycall"
+                  /*
+                  * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                  * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                  */
+                  rootElement={document.getElementById("root")}
+                  text="Get Started"
+                />
+              </div>
             </a>
             <a href='#benefits' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
               <div className='relative z-10 font-semibold'>Learn More</div>

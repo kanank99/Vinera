@@ -59,7 +59,7 @@ function Whyus(props) {
               <div class="card-info flex items-center justify-center">
                 <div class="card-info-title text-white flex flex-col gap-1 w-[90%]">
                   <p className='text-xl font-semibold text-center'>Efficient Integration</p>
-                  <p className='text-[#8a8f98] leading-snug text-center'>We seamlessly integrate and deploy chatbot solutions into your existing systems and platforms.</p>
+                  <p className='text-[#8a8f98] leading-snug text-center'>We seamlessly integrate and deploy AI solutions into your existing systems and platforms.</p>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ function Whyus(props) {
               <h2 class="text-center lg:text-left mb-2 text-3xl text-gray-800 font-bold lg:text-4xl dark:text-gray-200">
                 It's all about <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">efficiency</span>.
               </h2>
-              <p class="text-center lg:text-left text-gray-600 dark:text-gray-400">
+              <p class="text-center lg:text-left text-gray-600 dark:text-gray-400 mt-[25px]">
                 Experience instant access through a streamlined automated process. Our core priority revolves around rapid response times to empower your operations promptly.
               </p>
             </div>
@@ -153,7 +153,7 @@ function Whyus(props) {
               </svg>
 
               <div class="relative z-10">
-                <p class="text-left text-xl italic text-gray-800 dark:text-white">
+                <p class="text-left text-xl italic text-gray-800 dark:text-white mt-[50px]">
                   You’re either the one that creates the automation or you’re getting automated.”
                 </p>
               </div>

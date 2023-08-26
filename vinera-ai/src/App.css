@@ -5,7 +5,16 @@
 
 ::root {
   --icon-size: 74px;
+  --automation-animation-logo: 160px;
 }
+
+@media (max-width: 700px) {
+  ::root {
+    --icon-size: 64px;
+    --automation-animation-logo: 128px;
+  }
+}
+
 
 .App {
   text-align: center;
@@ -644,7 +653,7 @@
 }
 
 .glowing-item-integrations {
-  box-shadow: 0px 0px 300px 90px rgba(7, 128, 93, 1);
+  box-shadow: 0px 0px 300px 90px rgba(87, 30, 255, 0.57);
   /* background:linear-gradient(rgba(108, 56, 255, 0.8) 0%, rgba(181, 154, 255, 0.8) 100%) */
 }
 
@@ -1082,6 +1091,34 @@
   overflow: visible;
   filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
   flex-shrink: 0;
+}
+
+.automation-animation-logo-box {
+  position: absolute;
+  inset: 0px;
+  margin: auto;
+  z-index: 100;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-image: conic-gradient(rgba(255, 255, 255, 0.1) 100%, transparent 100%);
+}
+
+.automation-animation-logo-box::before {
+  content: "";
+  z-index: -1;
+  inset: -100px;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(black 0px, #060606 30px, transparent 35%);
+  animation: 0.7s linear 0s infinite normal none running rotate;
+}
+
+.automation-animation-logo {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 35px;
+  will-change: opacity;
 }
 
 @keyframes translateX-1 {

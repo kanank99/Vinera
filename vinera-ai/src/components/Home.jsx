@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from './Main';
 import Whyus from './Whyus';
-import Integrations from './Integrations';
+// import Integrations from './Integrations';
 import OurTeam from './OurTeam';
 import Faq from './Faq';
 import Calendly from './Calendly';
@@ -11,6 +11,7 @@ import Pricing from './Pricing';
 import Steps from './Steps';
 import Newsletter from './Newsletter';
 import Benefits from './Benefits';
+import AutomationsAnimation from './AutomationsAnimation';
 
 function Home(props) {
     return (
@@ -19,7 +20,8 @@ function Home(props) {
             <Steps darkMode={props.darkMode} />
             <Benefits darkMode={props.darkMode} />
             <Whyus darkMode={props.darkMode} />
-            <Integrations darkMode={props.darkMode} />
+            {/* <Integrations darkMode={props.darkMode} /> */}
+            <AutomationsAnimation darkMode={props.darkMode} />
             <OurTeam darkMode={props.darkMode} />
             <Pricing darkMode={props.darkMode} />
             <SavingsCalc darkMode={props.darkMode} />
