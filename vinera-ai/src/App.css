@@ -979,30 +979,6 @@
   opacity: 0.15;
 }
 
-.animation-box::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: linear-gradient(270deg, #060606 0%, rgba(6, 6, 6, 0) 100%);
-  transform: rotate(-180deg);
-  will-change: transform;
-  width: 165px;
-  height: 100%;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.animation-box::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background: linear-gradient(270deg, #060606 0%, rgba(6, 6, 6, 0) 100%);
-  width: 165px;
-  height: 100%;
-  z-index: 1;
-}
 
 .animation-box-shadow-bottom {
   position: absolute;
@@ -1071,14 +1047,48 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  width: 74px;
-  height: 74px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
   border-radius: 25%;
   overflow: hidden;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 1px 0px inset;
   background: linear-gradient(155.91deg, rgb(24, 25, 28) 21.92%, rgb(33, 34, 37) 77.49%);
-  margin-right: 32px;
+  margin-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .icons-box {
+    margin-right: 32px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .animation-box::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, #060606 0%, rgba(6, 6, 6, 0) 100%);
+    transform: rotate(-180deg);
+    will-change: transform;
+    width: 165px;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  .animation-box::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, #060606 0%, rgba(6, 6, 6, 0) 100%);
+    width: 165px;
+    height: 100%;
+    z-index: 1;
+  }
+
 }
 
 .icons-img {
@@ -1159,6 +1169,16 @@
   100% {
     transform: translateX(calc(-100% + 0%))
   }
+}
+
+.automations-header.sticking {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #131315;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
 }
 
 /* .card::before {
