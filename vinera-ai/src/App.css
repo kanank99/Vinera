@@ -916,6 +916,10 @@
   transition-delay: 2800ms;
 }
 
+.integrations-bg {
+  background: linear-gradient(180deg, rgb(0, 7, 49) 0%, rgba(6, 6, 6, 1) 100%);
+}
+
 .space {
   position: fixed;
   top: 50%;
@@ -1178,7 +1182,169 @@
   z-index: 1000;
   background: #131315;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.automation-list-grid[data-overflow-hidden="true"] {
+  height: calc((2 * 138px) + ((2 - 1) * 16px) + 138px);
+}
+
+.automation-list-grid[data-overflow-hidden="false"] {
+  height: auto;
+}
+
+.automation-list-grid {
+  height: 138px;
+  offset: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 16px;
+  overflow: hidden;
+  will-change: height;
+  transition: height 400ms ease 0s;
+  font-size: 1.1em;
+  margin-top: 0.8em;
+  margin-bottom: 1.2em;
+  color: #f7f8f8;
+}
+
+@media (max-width: 700px) {
+  .automation-list-grid {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+    margin-left: calc(-1 * max(env(safe-area-inset-left), 32px));
+    margin-right: calc(-1 * max(env(safe-area-inset-right), 32px));
+    padding-left: calc(1 * max(env(safe-area-inset-left), 32px));
+    padding-bottom: 24px;
+    height: auto !important;
+  }
+
+  .automation-list-grid>li>* {
+    max-width: calc(100vw - max(env(safe-area-inset-left), 24px) - max(env(safe-area-inset-left), 24px));
+  }
+
+  .automation-list-showmore-shadow {
+    visibility: hidden;
+  }
+
+  .automation-list-showmore-button {
+    display: none;
+  }
+
+}
+
+.automation-list-showmore-shadow {
+  position: absolute;
+  height: 138px;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, transparent 0px, #060606 120px);
+  transition: transform 400ms ease 0s, opacity 400ms ease 0s;
+  transform: translateY(0%);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.automation-list-showmore-button {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-family: inherit;
+  font-optical-sizing: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  -webkit-tap-highlight-color: transparent;
+  color: #5e6ad2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.006px;
+  position: absolute;
+  bottom: 8px;
+  cursor: pointer;
+  transition: opacity 400ms ease 0s, color 400ms ease 0s;
+}
+
+.automation-list-showmore-button:hover {
+  color: #d0d6e0
+}
+
+.automation-list-item {
+  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  grid-template-areas: "icon name request"
+    "description description description";
+  border-radius: 16px;
+  background: #131315;
+  border: 1px solid #222326;
+  padding: 24px;
+  transition: background 80ms ease 0s, border-color;
+  grid-row-gap: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.automation-list-item-icon-div {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translate(40%, -40%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(108, 56, 255, 0.8) 0%, rgba(181, 154, 255, 0.8) 100%), rgb(196, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.automation-list-item-icon-grid-area {
+  grid-area: icon / icon / icon / icon;
+}
+
+.automation-list-item-name {
+  grid-area: name / name / name / name;
+  margin-left: 12px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.016em;
+  color: #f7f8f8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.automation-list-item-description {
+  grid-area: description / description / description / description;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #8a8f98;
+  min-height: 48px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: anywhere;
 }
 
 /* .card::before {

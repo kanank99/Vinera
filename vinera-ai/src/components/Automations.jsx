@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import Integrations from './Integrations';
 import AutomationsHeader from './AutomationsHeader';
+import AutomationsLists from './AutomationsLists';
 
 function Automations(props) {
 
@@ -28,10 +29,10 @@ function Automations(props) {
     }, [])
 
     return (
-        <div>
+        <div className='bg-[#060606]'>
             <Integrations darkMode={props.darkMode} />
             <AutomationsHeader darkMode={props.darkMode} />
-            <div className='h-[10000px] bg-[#060606]'></div>
+            <AutomationsLists />
         </div>
     )
 }
