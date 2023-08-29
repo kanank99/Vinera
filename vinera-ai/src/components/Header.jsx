@@ -23,7 +23,7 @@ function Header(props) {
                 </div>
                 <div className='hidden lg:flex lg:gap-10 lg:items-center lg:justify-center z-10'>
                     <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><a className='tracking-tight' href='#steps'>Solutions</a>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
-                    {/* <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><Link to='/automations' className='relative z-10'>Automations</Link></div> */}
+                    <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><Link to='/automations' className='relative z-10'>Automations</Link></div>
                     <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center'><a href='#team' className='tracking-tight'>Our Team</a></div>
                     <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><a href='#pricing' className='relative z-10'>Memberships</a></div>
                 </div>
