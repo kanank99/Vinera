@@ -1193,6 +1193,11 @@
   height: auto;
 }
 
+.auto-height {
+  height: auto !important;
+}
+
+
 .automation-list-grid {
   height: 138px;
   offset: 0;
@@ -1214,7 +1219,7 @@
     flex-direction: column;
     gap: unset;
     margin-left: calc(-1 * max(env(safe-area-inset-left), 32px));
-    margin-right: calc(-1 * max(env(safe-area-inset-right), 32px));
+    /* margin-right: calc(-1 * max(env(safe-area-inset-right), 32px)); */
     padding-left: calc(1 * max(env(safe-area-inset-left), 32px));
     padding-bottom: 24px;
     height: auto !important;

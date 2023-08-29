@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import Integrations from './Integrations';
 import AutomationsHeader from './AutomationsHeader';
 import AutomationsLists from './AutomationsLists';
+import Newsletter from './Newsletter';
+import Footer from './Footer';
 
 function Automations(props) {
 
@@ -25,6 +27,10 @@ function Automations(props) {
         navObserver.observe(scrollWatcher);
 
 
+        window.scroll({
+            top: 0,
+            behavior: 'instant'
+        })
 
     }, [])
 
@@ -33,6 +39,8 @@ function Automations(props) {
             <Integrations darkMode={props.darkMode} />
             <AutomationsHeader darkMode={props.darkMode} />
             <AutomationsLists />
+            <Newsletter darkMode={props.darkMode} setShowAlert={props.setShowAlert} />
+            <Footer darkMode={props.darkMode} />
         </div>
     )
 }

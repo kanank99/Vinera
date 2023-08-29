@@ -15,7 +15,6 @@ function Header(props) {
     const [appHovering, setAppHovering] = useState(false)
 
     const location = useLocation();
-
     return (
         <>
             <div className={`${location.pathname === '/' ? 'header-transparency' : 'bg-[#060606]'} transition-all text-[#191c1d] fixed w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50 max-w-[100dvw]`}>

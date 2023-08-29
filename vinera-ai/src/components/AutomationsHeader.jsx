@@ -15,8 +15,11 @@ function AutomationsHeader() {
                                 :
                                 <svg className='w-[24px]' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#62656d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>support</title> <rect width="24" height="24" fill="none"></rect> <path d="M12,2a8,8,0,0,0-8,8v1.9A2.92,2.92,0,0,0,3,14a2.88,2.88,0,0,0,1.94,2.61C6.24,19.72,8.85,22,12,22h3V20H12c-2.26,0-4.31-1.7-5.34-4.39l-.21-.55L5.86,15A1,1,0,0,1,5,14a1,1,0,0,1,.5-.86l.5-.29V11a1,1,0,0,1,1-1H17a1,1,0,0,1,1,1v5H13.91a1.5,1.5,0,1,0-1.52,2H20a2,2,0,0,0,2-2V14a2,2,0,0,0-2-2V10A8,8,0,0,0,12,2Z"></path> </g></svg>
                         }
-                        <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Customer Service' ? 'text-[#fff]' : null
-                            } transition duration-400 select-none`} onClick={() => setCategorySelected('Customer Service')}>Customer Service</h1>
+                        <a href='#customer-service'>
+                            <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Customer Service' ? 'text-[#fff]' : null
+                                } transition duration-400 select-none`} onClick={() => setCategorySelected('Customer Service')}>Customer Service
+                            </h1>
+                        </a>
                     </div>
                     <div className='flex items-center gap-2'>
                         {
@@ -24,8 +27,11 @@ function AutomationsHeader() {
                                 :
                                 <svg className='w-[24px]' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg%22%3E"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 14C21.2091 14 23 16 23 17.5C23 18.3284 22.3284 19 21.5 19H21M17 11C18.6569 11 20 9.65685 20 8C20 6.34315 18.6569 5 17 5M5 14C2.79086 14 1 16 1 17.5C1 18.3284 1.67157 19 2.5 19H3M7 11C5.34315 11 4 9.65685 4 8C4 6.34315 5.34315 5 7 5M16.5 19H7.5C6.67157 19 6 18.3284 6 17.5C6 15 9 14 12 14C15 14 18 15 18 17.5C18 18.3284 17.3284 19 16.5 19ZM15 8C15 9.65685 13.6569 11 12 11C10.3431 11 9 9.65685 9 8C9 6.34315 10.3431 5 12 5C13.6569 5 15 6.34315 15 8Z" stroke="#62656d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         }
-                        <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Lead Generation' ? 'text-[#fff]' : null
-                            } transition duration-400 select-none`} onClick={() => setCategorySelected('Lead Generation')}>Lead Generation</h1>
+                        <a href='#lead-generation'>
+                            <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Lead Generation' ? 'text-[#fff]' : null
+                                } transition duration-400 select-none`} onClick={() => setCategorySelected('Lead Generation')}>Lead Generation
+                            </h1>
+                        </a>
                     </div>
                     <div className='flex items-center gap-2'>
                         {
@@ -33,8 +39,11 @@ function AutomationsHeader() {
                                 :
                                 <svg className='w-[24px] h-[24px]' fill="#62656d" height="200px" width="200px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23.4,13.3C23,13.1,22.4,13,22,13.2l-1,0.4v-12C21,0.7,20.3,0,19.5,0h-2C16.7,0,16,0.7,16,1.5V3h-2.5C12.7,3,12,3.7,12,4.5 V8H9.5C8.7,8,8,8.7,8,9.5v5.2l-3,0.7v-0.3c0-0.6-0.3-1.1-0.8-1.3L3,13.2C2.8,12.5,2.2,12,1.5,12h-1C0.2,12,0,12.2,0,12.5v11 C0,23.8,0.2,24,0.5,24h1c0.7,0,1.3-0.5,1.5-1.2l1.2-0.6C4.6,22,4.9,21.5,5,21l4.8,2.8c0.2,0.1,0.5,0.2,0.8,0.2 c0.2,0,0.5-0.1,0.7-0.2l12-6.4c0.5-0.3,0.8-0.8,0.8-1.3v-1.5C24,14.1,23.8,13.6,23.4,13.3z M2,22.5C2,22.8,1.8,23,1.5,23H1V13h0.5 C1.8,13,2,13.2,2,13.5V22.5z M4,20.9c0,0.2-0.1,0.4-0.3,0.4L3,21.7v-7.4l0.7,0.4C3.9,14.8,4,14.9,4,15.1V20.9z M17,1.5 C17,1.2,17.2,1,17.5,1h2C19.8,1,20,1.2,20,1.5v12.4L17,15V1.5z M13,4.5C13,4.2,13.2,4,13.5,4H16v11.4l-1.4,0.5l-0.3-1.1 c-0.2-0.6-0.7-1-1.2-1.1V4.5z M9,9.5C9,9.2,9.2,9,9.5,9H12v4.8l-3,0.7V9.5z M23,16c0,0.2-0.1,0.4-0.3,0.4l-12,6.5 c-0.1,0.1-0.3,0.1-0.5,0L5,19.9v-3.5l7.7-1.7c0.3-0.1,0.5,0.1,0.6,0.4l0.5,1.6c0,0.1,0,0.3,0,0.4c-0.1,0.1-0.2,0.2-0.3,0.2l-3,0.7 c-0.3,0.1-0.4,0.3-0.4,0.6c0.1,0.2,0.3,0.4,0.5,0.4c0,0,0.1,0,0.1,0l3-0.7c0.4-0.1,0.7-0.4,0.9-0.7c0.1-0.2,0.2-0.4,0.2-0.6l7.6-2.8 c0.2-0.1,0.3,0,0.5,0.1c0.1,0.1,0.2,0.2,0.2,0.4V16z"></path> </g></svg>
                         }
-                        <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Data' ? 'text-[#fff]' : null
-                            } transition duration-400 select-none`} onClick={() => setCategorySelected('Data')}>Data</h1>
+                        <a href='#data'>
+                            <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Data' ? 'text-[#fff]' : null
+                                } transition duration-400 select-none`} onClick={() => setCategorySelected('Data')}>Data
+                            </h1>
+                        </a>
                     </div>
                     <div className='flex items-center gap-2'>
                         {
@@ -42,8 +51,11 @@ function AutomationsHeader() {
                                 :
                                 <svg className='w-[24px] h-[24px]' fill="#62656d" viewBox="0 0 256 256" id="Layer_1" version="1.1" space="preserve" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink%22%3E"><g id=" SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M220.6,207.4l-31.6-38.7c14.8-24.3,18.4-53.8,9.8-81.4c-0.8-2.6-3.6-4-6.2-3.2c-2.6,0.8-4.1,3.6-3.2,6.2 c8.1,25.8,4.3,53.4-10.5,75.9l-0.3,0.4c-1,1.8-0.9,4,0.4,5.6l33.9,41.4c0,0,0.5,0.6,0.6,0.6c2.8,3.2,2.8,7.7,0.1,11 c-0.1,0.1-0.1,0.2-0.2,0.2l-0.7,0.7c-3.2,2.7-7.9,2.7-11.2-0.2c-0.2-0.2-0.3-0.3-0.5-0.5l-41.4-33.8c-1.7-1.4-4.1-1.5-5.9-0.3 l-0.4,0.3c-34.9,22.8-81.6,18.2-111.4-11c-0.2-0.3-0.3-0.6-0.5-0.8C6.6,145.2,6.6,88.7,41.3,54C76,19.3,132.5,19.3,167.2,54 c0.2,0.2,0.5,0.4,0.8,0.5c0.1,0.1,0.3,0.3,0.4,0.4c1.7,2.1,4.9,2.4,7,0.6c2.1-1.7,2.4-4.9,0.6-7c-0.4-0.5-1-1.1-1.6-1.7 C135.9,8.4,73.2,8.1,34.4,46.5c-0.1,0.1-0.3,0.2-0.4,0.4C18,62.9,8,84.2,5.7,106.7c-1,9.8-0.5,19.6,1.3,29.1 c3.8,19.5,13.2,37.2,27.3,51.3c32.3,32.2,83,38.1,121.8,14.5l38.4,31.4c0.2,0.2,0.5,0.5,0.7,0.7c3.5,3,7.7,4.4,11.9,4.4 c4.3,0,8.6-1.5,12.1-4.5l1.7-1.6c0.3-0.3,0.5-0.6,0.7-1c5.3-6.9,5.1-16.5-0.6-23.2C220.9,207.7,220.7,207.5,220.6,207.4z"></path> <path d="M249.8,20.9c-1-1.4-2.7-2.2-4.5-2l-32.1,3.4c-1.8,0.2-3.3,1.3-4,2.9c-0.7,1.6-0.5,3.5,0.5,4.9l7.1,9.7L104,121.1 c-1.2,0.8-1.9,2.2-2,3.6l-3,38.5l-48.8-47.7c-1-1-2.4-1.5-3.8-1.4l-14.3,1c-2.7,0.2-4.8,2.5-4.6,5.3c0.2,2.7,2.6,4.8,5.3,4.6 l12.1-0.8l54.8,53.5c0.9,0.9,2.2,1.4,3.5,1.4c0.6,0,1.2-0.1,1.7-0.3c1.8-0.7,3-2.3,3.2-4.2l3.7-46.7l111.1-79.9l6.1,8.4 c0.9,1.3,2.4,2,4,2c0.2,0,0.4,0,0.5,0c1.8-0.2,3.3-1.3,4-2.9l13-29.5C251.1,24.2,250.9,22.4,249.8,20.9z M231.8,43.5l-8.9-12.2 l15-1.6L231.8,43.5z"></path> </g> </g></svg>
                         }
-                        <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Marketing' ? 'text-[#fff]' : null
-                            } transition duration-400 select-none`} onClick={() => setCategorySelected('Marketing')}>Marketing</h1>
+                        <a href='#marketing'>
+                            <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Marketing' ? 'text-[#fff]' : null
+                                } transition duration-400 select-none`} onClick={() => setCategorySelected('Marketing')}>Marketing
+                            </h1>
+                        </a>
                     </div>
                     <div className='flex items-center gap-2'>
                         {
@@ -52,12 +64,15 @@ function AutomationsHeader() {
                                 <svg className='w-[24px] h-[24px]' viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill='#62656d'><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs></defs><path class="a" d="M12,19.77a11.13,11.13,0,0,0-2.26.94L10,25.24,5.44,25a11.13,11.13,0,0,0-.94,2.26l3.37,3.05-3.37,3a10.68,10.68,0,0,0,.94,2.26L10,35.39l-.23,4.54a11.09,11.09,0,0,0,2.26.93l3.05-3.37,3,3.37a10.64,10.64,0,0,0,2.26-.93l-.23-4.54,4.54.23a10.64,10.64,0,0,0,.93-2.26l-3.37-3,3.37-3.05A11.09,11.09,0,0,0,24.66,25l-4.54.23.23-4.53a10.68,10.68,0,0,0-2.26-.94l-3,3.37Z"></path><circle class="a" cx="15.05" cy="30.32" r="3.96"></circle><path class="a" d="M29.91,7.14a11,11,0,0,0-2.27.93l.24,4.54-4.54-.23a10.64,10.64,0,0,0-.93,2.26l3.36,3-3.36,3.05A11.09,11.09,0,0,0,23.34,23l4.54-.23-.24,4.53a11,11,0,0,0,2.27.94l3-3.37,3,3.37a11.13,11.13,0,0,0,2.26-.94L38,22.76l4.53.23a11.13,11.13,0,0,0,.94-2.26l-3.37-3.05,3.37-3a10.68,10.68,0,0,0-.94-2.26L38,12.61l.23-4.54A11,11,0,0,0,36,7.14l-3,3.37Z"></path><circle class="a" cx="32.95" cy="17.68" r="3.96"></circle></g></svg>
 
                         }
-                        <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Process Automations' ? 'text-[#fff]' : null
-                            } transition duration-400 select-none`} onClick={() => setCategorySelected('Process Automations')}>Process Automations</h1>
+                        <a href='#process-automations'>
+                            <h1 className={`whitespace-nowrap hover:text-[#d0d6e0] ${categorySelected === 'Process Automations' ? 'text-[#fff]' : null
+                                } transition duration-400 select-none`} onClick={() => setCategorySelected('Process Automations')}>Process Automations
+                            </h1>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -1227,7 +1227,7 @@ function AutomationsAnimation() {
                         With our opinionated workflows, Vinera unlocks your business full potential. It is the agency of choice for high-performance teams.</p>
                 </div>
                 <div className='mt-[32px] mb-[38px] flex flex-row justify-center'>
-                    <Link to='/automations' className='flex items-center h-[28px] text-[#d0d6e0] text-[13px] backdrop-blur-[12px] font-medium whitespace-nowrap px-[12px] bg-[#ffffff1A] hover:bg-[#ffffff33] transition-all border border-solid border-[#ffffff0D] rounded-full cursor-pointer'>
+                    <Link to={{ pathname: '/automations', hash: "#" }} className='flex items-center h-[28px] text-[#d0d6e0] text-[13px] backdrop-blur-[12px] font-medium whitespace-nowrap px-[12px] bg-[#ffffff1A] hover:bg-[#ffffff33] transition-all border border-solid border-[#ffffff0D] rounded-full cursor-pointer'>
                         <div>Discover Integrations</div>
                         <svg className='ml-[4px]' width="16" height="16" viewBox="0 0 16 16" fill="#b4bcd099"><path d="M5.46967 11.4697C5.17678 11.7626 5.17678 12.2374 5.46967 12.5303C5.76256 12.8232 6.23744 12.8232 6.53033 12.5303L10.5303 8.53033C10.8207 8.23999 10.8236 7.77014 10.5368 7.47624L6.63419 3.47624C6.34492 3.17976 5.87009 3.17391 5.57361 3.46318C5.27713 3.75244 5.27128 4.22728 5.56054 4.52376L8.94583 7.99351L5.46967 11.4697Z"></path></svg>
                     </Link>

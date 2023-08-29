@@ -1,8 +1,12 @@
 import React from 'react'
+import { useLocation } from "react-router-dom";
 
 function Newsletter(props) {
+    const location = useLocation();
     return (
-        <div class="py-10 px-4 sm:px-6 lg:px-8 lg:pt-0 md:pb-32 mx-auto bg-[#000212]">
+        <div class={`py-10 px-4 sm:px-6 lg:px-8 lg:pt-0 md:pb-32 mx-auto 
+        ${location.pathname === '/' ? 'bg-[#000212]' : 'bg-[#060606] mt-[60px]'}
+        `}>
             <div class="max-w-xl text-center mx-auto">
                 <div class="mb-5">
                     <h2 class="text-2xl font-bold md:text-3xl md:leading-tight dark:text-white">Sign up to our newsletter</h2>

@@ -28,7 +28,7 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />
       <Routes>
         <Route path='/' element={<Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />} />
-        <Route path='/automations' element={<Automations darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
+        <Route path='/automations' element={<Automations darkMode={darkMode} toggleDarkMode={toggleDarkMode} setShowAlert={setShowAlert} />} />
       </Routes>
       <dialog className=' top-0 left-0 w-full h-full  bg-transparent fixed z-[100]'>
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#161b22] rounded-2xl'>
