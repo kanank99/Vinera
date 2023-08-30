@@ -168,7 +168,7 @@ function AutomationsLists() {
                             photo="https://media.licdn.com/dms/image/C560BAQETokWWZwS4SA/company-logo_200_200/0/1678111764522?e=2147483647&v=beta&t=1ZKXClApOh9PlW9IWCjmjqb6fbfyjSUSIfujO9qkmFo"
                         />
                         <AutomationListItem
-                            name="Farmstack"
+                            name="Formstack"
                             description="Automate workflows. Save hours. Deliver frictionless experiences"
                             photo="https://play-lh.googleusercontent.com/d41LSxhTxSNjB2Ee8C9tM1iwSANFr0B_YY72BDBUdNBFyntAVdt_vVoFUSzmJPjnLB3L"
                         />

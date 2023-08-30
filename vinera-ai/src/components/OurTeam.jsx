@@ -17,7 +17,7 @@ function OurTeam(props) {
                 <div className='text-[#f7f7f7] text-4xl lg:text-5xl w-full mt-20'>
                     <p className='font-bold'>MEET THE <span className='relative text-transparent bg-clip-text bg-gradient-to-tr from-green-600 to-green-400 dark:from-[#455eb5] dark:to-purple-600'>TEAM</span></p>
                 </div>
-                <div className='flex flex-col lg:flex-row gap-10 lg:gap-20 my-20'>
+                <div className='flex flex-col lg:flex-row gap-10 my-20'>
                     <div className={`relative flex items-center justify-center w-[320px] aspect-[11/15] border-2 border-green-700 dark:border-blue-800 rounded-[1rem] ${props.darkMode ? 'rgba-dark' : 'rgba'}`}>
                         <div className={`${props.darkMode ? 'screen-overlay-dark' : 'screen-overlay'}`}></div>
                         <div className={`flex flex-col items-center rounded-lg ${props.darkMode ? 'screen-content-dark' : 'screen-content'} `}>

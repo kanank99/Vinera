@@ -53,7 +53,7 @@ function Header(props) {
                         >
                             <div className='relative z-10'>App</div>
                             {appHovering &&
-                                <div style={{ position: 'absolute', top: '45px', width: '150%', backgroundColor: '#f9f9f9', color: '#000', border: '1px solid #ccc', borderRadius: '4px', padding: '2px', zIndex: '1', fontSize: '16px' }}>
+                                <div style={{ position: 'absolute', top: '45px', width: '150%', backgroundColor: '#f9f9f9', color: '#000', border: '1px solid #ccc', borderRadius: '4px', padding: '2px', zIndex: '9999', fontSize: '16px' }}>
                                     <p>Coming soon!</p>
                                 </div>
                             }

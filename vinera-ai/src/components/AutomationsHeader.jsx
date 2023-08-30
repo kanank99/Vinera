@@ -4,7 +4,7 @@ import { useState } from 'react';
 function AutomationsHeader() {
     const [categorySelected, setCategorySelected] = useState('Customer Service')
     return (
-        <div className='sticky z-50  top-[80px] py-[12px] automations-header text-[#62656d] font-display border-b-[1px] border-b-[#222326]'>
+        <div className='sticky z-40  top-[80px] py-[12px] automations-header text-[#62656d] font-display border-b-[1px] border-b-[#222326]'>
             {/* build a sticky header */}
             {/* // bg-[#131315] */}
             <div className='relative flex  items-center max-w-[1008px] w-full mx-auto'>
