@@ -5,7 +5,7 @@ function Newsletter(props) {
     const location = useLocation();
     return (
         <div class={`py-10 px-4 sm:px-6 lg:px-8 lg:pt-0 md:pb-32 mx-auto 
-        ${location.pathname === '/' ? 'bg-[#000212]' : 'bg-[#060606] mt-[60px]'}
+        ${(location.pathname === '/' || location.pathname === '/contact') ? 'bg-transparent' : 'bg-[#060606] mt-[60px]'}
         `}>
             <div class="max-w-xl text-center mx-auto">
                 <div class="mb-5">

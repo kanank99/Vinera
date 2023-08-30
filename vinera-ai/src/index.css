@@ -26,6 +26,11 @@ html {
   scroll-padding-top: 140px;
 }
 
+*::selection {
+  background: #4f52b4;
+  color: #fff;
+}
+
 body {
   margin: 0;
   color: #191c1de3;

@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Integrations from './Integrations';
 import AutomationsHeader from './AutomationsHeader';
 import AutomationsLists from './AutomationsLists';
+import Calendly from './Calendly';
 import Newsletter from './Newsletter';
 import Footer from './Footer';
 
@@ -39,6 +40,7 @@ function Automations(props) {
             <Integrations darkMode={props.darkMode} />
             <AutomationsHeader darkMode={props.darkMode} />
             <AutomationsLists />
+            <Calendly darkMode={props.darkMode} />
             <Newsletter darkMode={props.darkMode} setShowAlert={props.setShowAlert} />
             <Footer darkMode={props.darkMode} />
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ZapierSVG from '../assets/images/zapier-svg.svg';
 import VoiceflowSVG from '../assets/images/voiceflow-svg.svg';
 import StripeSVG from '../assets/images/stripe-svg.svg';
@@ -183,12 +184,12 @@ function Pricing() {
                                     <span className='enterprise-card-content-upper-text-subtitle lg:text-left'>
                                         Designed for ambitious enterprises aiming to expand securely. Vinera Enterprise delivers heightened features, extensive administrative automations, and supplementary perks.                                    </span>
                                 </div>
-                                <a href="#calendly" class='enterprise-card-content-upper-button ml-[48px]'>
+                                <Link to="/contact" class='enterprise-card-content-upper-button ml-[48px]'>
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="#f7f7f7">
                                         <path d="M8 1C4.13401 1 1 3.262 1 7C1 8.83211 1.75288 10.3096 2.97581 11.3401C2.22526 13.7801 2.07619 15 2.52874 15C2.93754 15 3.96564 14.2301 5.61306 12.6902C6.35802 12.8937 7.16181 13 8 13C11.866 13 15 10.6678 15 7C15 3.33217 11.866 1 8 1Z"></path>
                                     </svg>
                                     <span className='text-[#f7f7f7]'>Contact Sales</span>
-                                </a>
+                                </Link>
                             </div>
                             <div class='enterprise-card-content-lower select-none'>
                                 <div class='row'>

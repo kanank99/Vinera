@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import Automations from './components/Automations';
+import Contact from './components/Contact';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} showAlert={showAlert} setShowAlert={setShowAlert} />} />
         <Route path='/automations' element={<Automations darkMode={darkMode} toggleDarkMode={toggleDarkMode} setShowAlert={setShowAlert} />} />
+        <Route path='/contact' element={<Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} setShowAlert={setShowAlert} />} />
       </Routes>
       <dialog className=' top-0 left-0 w-full h-full  bg-transparent fixed z-[100]'>
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#161b22] rounded-2xl'>

@@ -389,6 +389,14 @@
   text-align: center;
 }
 
+.enterprise-card-content-upper-text-title-contact {
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
 /* .enterprise-card-content-upper-title-decorated {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -618,6 +626,10 @@
   background: radial-gradient(circle at center, rgba(120, 119, 198, 1) -100%, rgba(0, 2, 18, 1) 60%) no-repeat;
 }
 
+.dark-testing-middle-calendly-automations {
+  background: radial-gradient(circle at center, rgba(120, 119, 198, 1) -100%, rgba(6, 6, 6, 1) 40%) no-repeat;
+}
+
 .dark-testing-middle-benefit-left {
   background: radial-gradient(circle at left, rgba(120, 119, 198, 1) -400%, rgba(0, 2, 18, 1) 50%) no-repeat;
 
@@ -630,6 +642,11 @@
 .dark-testing-top {
   background: radial-gradient(circle at center 0%, rgba(120, 119, 198, 1) -300%, rgba(0, 2, 18, 1) 80%) no-repeat;
 }
+
+.dark-testing-top-contact {
+  background: radial-gradient(ellipse at center 10%, rgba(120, 119, 198, 0.7) -300%, rgba(0, 2, 18, 1) 70%) no-repeat;
+}
+
 
 .dark-testing-bottom {
   background: radial-gradient(circle at center 300%, rgba(120, 119, 198, 1) -120%, rgba(0, 2, 18, 1) 80%) no-repeat;
