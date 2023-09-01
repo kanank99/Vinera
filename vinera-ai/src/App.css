@@ -1135,11 +1135,11 @@
   margin: auto;
   z-index: 100;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  background-image: conic-gradient(rgba(255, 255, 255, 0.1) 100%, transparent 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* background-image: conic-gradient(rgba(255, 255, 255, 0.1) 100%, transparent 100%); */
 }
 
-.automation-animation-logo-box::before {
+/* .automation-animation-logo-box::before {
   content: "";
   z-index: -1;
   inset: -100px;
@@ -1147,7 +1147,7 @@
   border-radius: 50%;
   background: radial-gradient(black 0px, #060606 30px, transparent 35%);
   animation: 0.7s linear 0s infinite normal none running rotate;
-}
+} */
 
 .automation-animation-logo {
   width: 100%;

@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRef } from 'react'
+import HeaderHome from './HeaderHome';
 import Main from './Main';
 import Whyus from './Whyus';
 // import Integrations from './Integrations';
@@ -12,10 +14,15 @@ import Steps from './Steps';
 import Newsletter from './Newsletter';
 import Benefits from './Benefits';
 import AutomationsAnimation from './AutomationsAnimation';
+import { motion } from 'framer-motion';
 
 function Home(props) {
+
+    const ref = useRef(null)
+
     return (
-        <div>
+        <motion.div className=''>
+            <HeaderHome darkMode={props.darkMode} ref={ref} />
             <Main darkMode={props.darkMode} />
             <Steps darkMode={props.darkMode} />
             <Benefits darkMode={props.darkMode} />
@@ -29,7 +36,7 @@ function Home(props) {
             <Faq darkMode={props.darkMode} />
             <Newsletter darkMode={props.darkMode} setShowAlert={props.setShowAlert} />
             <Footer darkMode={props.darkMode} />
-        </div>
+        </motion.div>
     )
 }
 

@@ -15,7 +15,7 @@ function AutomationsAnimation() {
                 {/* <Integrations darkMode={props.darkMode} /> */}
                 <div className='relative overflow-hidden mb-[46px] animation-box mt-16'>
                     <div className='animation-box-shadow-bottom'></div>
-                    <div className='automation-animation-logo-box w-[120px] h-[120px]'>
+                    <div className='automation-animation-logo-box w-[120px] h-[120px] backdrop-blur-[4px]'>
                         <img className='automation-animation-logo' data-animate="" decoding="async" src={VineraTransparent} alt="Linear logo" width="400" height="400" class="sc-25c6891f-3 bXmhxr" />
                     </div>
                     <div className='select-none max-w-[1023px] m-auto'>
