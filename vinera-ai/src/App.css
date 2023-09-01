@@ -623,11 +623,11 @@
 }
 
 .dark-testing-middle {
-  background: radial-gradient(circle at center, rgba(120, 119, 198, 1) -100%, rgba(0, 2, 18, 1) 60%) no-repeat;
+  background: radial-gradient(circle at center, rgb(63, 61, 192) -100%, rgba(0, 2, 18, 1) 60%) no-repeat;
 }
 
 .dark-testing-middle-calendly-automations {
-  background: radial-gradient(circle at center, rgba(120, 119, 198, 1) -100%, rgba(6, 6, 6, 1) 40%) no-repeat;
+  background: radial-gradient(circle at center, rgba(63, 61, 192, 0.5) -80%, rgba(6, 6, 6, 1) 50%) no-repeat;
 }
 
 .dark-testing-middle-benefit-left {
@@ -671,6 +671,11 @@
 
 .glowing-item-integrations {
   box-shadow: 0px 0px 300px 90px rgba(87, 30, 255, 0.57);
+  /* background:linear-gradient(rgba(108, 56, 255, 0.8) 0%, rgba(181, 154, 255, 0.8) 100%) */
+}
+
+.glowing-item-steps {
+  box-shadow: 0px 0px 300px 60px rgba(120, 119, 198, 0.37);
   /* background:linear-gradient(rgba(108, 56, 255, 0.8) 0%, rgba(181, 154, 255, 0.8) 100%) */
 }
 

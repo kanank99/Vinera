@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 function Benefits() {
     return (
         <div id='benefits' className='bg-[#000212] font-display relative'>
+            <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <div className='benefits-circle-gradient-left'></div>
             <div className='benefits-circle-gradient-right'></div>
             <div className='benefits-circle-gradient-left-2'></div>
             {/* Header */}
             <div className='flex flex-col items-center justify-center py-16 pt-16 lg:py-28'>
-                <h1 class="px-4 mb-10 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl">What advantages can <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">AI</span> offer your <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">team</span>?</h1>
-                <p class="text-lg font-normal text-gray-500 lg:text-2xl dark:text-gray-400 px-4 lg:w-[80%]">Discover how AI and Automation free up your team from repetitive tasks, allowing more concentration on essential work.</p>
+                <h1 class="px-4 mb-10 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl">What advantages can <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">AI</span> offer your <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">team</span>?</h1>
+                <p class="text-lg font-normal text-gray-500 lg:text-2xl dark:text-gray-400 px-4 lg:w-[60%] leading-8">Discover how AI and Automation free up your team from repetitive tasks, allowing more concentration on essential work.</p>
             </div>
             <div className='min-h-[500px] dark-testing-middle-benefit-left top-0 sticky'>
                 <section class="">

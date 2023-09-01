@@ -17,7 +17,7 @@ function Header(props) {
     const location = useLocation();
     return (
         <>
-            <div className={`${(location.pathname === '/' || location.pathname === '/contact') ? 'header-transparency' : 'bg-[#060606]'} transition-all text-[#191c1d] sticky top-0 w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50 max-w-[100dvw]`}>
+            <div className={`${(location.pathname === '/' || location.pathname === '/contact') ? 'header-transparency' : 'bg-[#060606] sticky'} transition-all text-[#191c1d] absolute top-0 w-full flex justify-between h-20 border-b-[1px] border-b-[#27282b] items-center pl-6 pr-6 lg:pl-20 lg:pr-20 z-50 max-w-[100dvw]`}>
                 <div className='z-10 select-none'>
                     <Link to='/'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </Link>
                 </div>

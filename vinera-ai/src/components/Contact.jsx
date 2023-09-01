@@ -15,7 +15,7 @@ function Contact(props) {
     return (
         // < !--Hire Us-- >
         <div class='dark-testing-top-contact h-[100dvh] font-display'>
-            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mb-24 lg:mb-36">
+            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mb-24 lg:mb-36 mt-[5rem]">
                 {/* <!-- Grid --> */}
                 <div class="grid md:grid-cols-2 items-center gap-12">
                     <div>
@@ -62,9 +62,9 @@ function Contact(props) {
                         </div>
 
 
-                        <div class="mt-10 flex items-center gap-x-5">
+                        <div class="mt-10 lg:flex items-center gap-x-5">
                             {/* <!-- Avatar Group --> */}
-                            <div class="flex -space-x-2">
+                            <div class="lg:flex mb-4 lg:mb-0 -space-x-2">
                                 <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-800" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Description" />
                                 <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-800" src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80" alt="Description" />
                                 <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-800" src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80" alt="Description" />
@@ -136,7 +136,7 @@ function Contact(props) {
                                     </div>
                                 </div>
                                 {/* <!-- End Grid --> */}
-
+                                <input type="hidden" name="_captcha" value="false" />
                                 <div class="flex flex-col min-[1086px]:flex-row-reverse max-[1086px]:gap-[20px] justify-between items-center mt-8">
                                     <button type="submit" class="transition bg-[#ffffff08] hover:bg-[#ffffff18] border border-[#ffffff0D] px-[16px] h-[32px] rounded-full flex items-center justify-center backdrop-blur-[14px]">
                                         <p class="text-[13px] text-white font-medium focus:outline-none">Send message</p>

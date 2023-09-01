@@ -347,7 +347,7 @@ function AutomationsLists() {
                         />
                         <AutomationListItem
                             name="Zapier"
-                            description="Automate your work. Connect your apps. Elevate your productivity."
+                            description="Automate your work. Connect your apps. Elevate your productivity"
                             photo="https://squadcast.fm/wp-content/uploads/2023/01/Zapier-Icon.png"
                             isFavorite={true}
                         />

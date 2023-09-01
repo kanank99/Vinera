@@ -15,7 +15,7 @@ function OurTeam(props) {
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
             <div className='flex flex-col items-center justify-center '>
                 <div className='text-[#f7f7f7] text-4xl lg:text-5xl w-full mt-20'>
-                    <p className='font-bold'>MEET THE <span className='relative text-transparent bg-clip-text bg-gradient-to-tr from-green-600 to-green-400 dark:from-[#455eb5] dark:to-purple-600'>TEAM</span></p>
+                    <p className='font-md'>MEET THE <span className='relative text-transparent bg-clip-text bg-gradient-to-tr from-green-600 to-green-400 dark:from-[#455eb5] dark:to-purple-600'>TEAM</span></p>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-10 my-20'>
                     <div className={`relative flex items-center justify-center w-[320px] aspect-[11/15] border-2 border-green-700 dark:border-blue-800 rounded-[1rem] ${props.darkMode ? 'rgba-dark' : 'rgba'}`}>

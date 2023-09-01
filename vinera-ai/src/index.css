@@ -54,8 +54,14 @@ code {
   animation: blink 0.7s infinite;
 }
 
+
 .glow-button:hover {
   box-shadow: 1px -1px 10px #166534, -1px 1px 10px #166534;
+}
+
+.glow-button-steps {
+  box-shadow: 1px -1px 10px #9333ea, -1px 1px 10px #3b82f6;
+  background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%)
 }
 
 .glow-button-dark-princing:hover {
