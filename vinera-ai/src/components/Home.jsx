@@ -34,6 +34,7 @@ function Home(props) {
         <motion.div className=''>
             <HeaderHome darkMode={props.darkMode} ref={ref} />
             <Main darkMode={props.darkMode} />
+            <hr className='border-[#27282B] w-full' />
             <Steps darkMode={props.darkMode} />
             <Benefits darkMode={props.darkMode} />
             <Whyus darkMode={props.darkMode} />

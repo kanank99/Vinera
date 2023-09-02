@@ -3,8 +3,9 @@ import Typed from 'typed.js';
 import BIRDS from 'vanta/dist/vanta.birds.min.js'
 import StarDay from '../assets/images/star-day-icon.svg';
 import StarNight from '../assets/images/star-night-icon.svg';
-import { PopupButton } from 'react-calendly'
-
+import Shine from '../assets/images/shine-img.png';
+import { PopupButton } from 'react-calendly';
+import { Link } from 'react-router-dom';
 
 function Main(props) {
 
@@ -64,7 +65,14 @@ function Main(props) {
         <div className='absolute top-0 left-0 w-full h-full z-10 dark-testing-top opacity-70'></div>
         : null}
       <div id='main' className='overflow-hidden	 vanta font-display flex justify-center items-center h-[100dvh] min-h-[100dvh] dark:text-[#f7f7f7]'>
-        <div className='z-20 flex flex-col justify-center items-center sm:gap-14'> <p className='text-4xl h-60 sm:text-6xl leading-snug sm:leading-snug font-bold text-center w-[90%] dark:text-[#f7f7f7]'>Develop <span className='text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600'>AI</span> Powered <span className='text-transparent bg-clip-text bg-gradient-to-t from-green-800 to-green-100 dark:from-[#455eb5] dark:to-purple-600'>Automated</span> <br /> <span ref={ele} /></p>
+        <div className='z-20 flex flex-col justify-center items-center sm:gap-14'>
+          <div className='flex flex-col'>
+            <Link to='/automations' className='mb-7 md:mb-10 main-automation-button overflow-hidden backdrop-blur-[6px] rounded-[32px] mx-auto py-[4px] px-[13px] flex relative w-max text-[14px] leading-5'>
+              <img src={Shine} className='w-[18px] h-[18px] mr-[6px]' alt='shine-icon' />
+              <div className='main-automation-button-text'>New: AI integrations just landed!</div>
+            </Link>
+            <p className='text-4xl h-60 sm:text-6xl leading-snug sm:leading-snug font-bold text-center mx-auto dark:text-[#f7f7f7]'>Develop <span className='text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600'>AI</span> Powered <span className='text-transparent bg-clip-text bg-gradient-to-t from-green-800 to-green-100 dark:from-[#455eb5] dark:to-purple-600'>Automated</span> <br /> <span ref={ele} /></p>
+          </div>
           <p className=' pt-5 md:pt-0 text-center leading-snug w-[90%] text-2xl font-normal dark:text-[#b4bcd0]' >Leverage Vinera AI to <span className='font-semibold dark:text-[#f7f7f7]'>automate tasks</span>, eradicate manual work, and achieve <span className='font-semibold dark:text-[#f7f7f7]'>significant cost savings</span>.</p>
           <div className='text-center leading-snug w-[90%] text-2xl font-normal flex justify-center items-center gap-2 pt-5 sm:pt-0' >
             <div class="flex -space-x-2">
@@ -97,10 +105,9 @@ function Main(props) {
               <div className='relative z-10 font-semibold'>Learn More</div>
             </a>
           </div>
-
         </div>
         <div className='absolute h-full w-full' id='vanta' ref={vantaRef}></div>
-      </div>
+      </div >
     </>
   )
 }
