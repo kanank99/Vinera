@@ -52,15 +52,25 @@ function Steps() {
     return (
         <div id='steps' className='bg-[#000212] font-display hidden min-[1220px]:block grid-bg pt-[50px]'>
             <div className='mx-auto min-[1220px]:mx-0'>
-                <div className='flex flex-col items-center justify-center pb-40 pt-4'>
+                <motion.div className='flex flex-col items-center justify-center pb-40 pt-4'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        duration: 0.4,
+
+                    }}>
                     <h1 class="px-4 font-md text-[1.5rem] tracking-[0.1em] uppercase mb-[24px] font-md text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">YOUR ROADMAP TO SUCCESS</h1>
                     <h2 class="text-6xl text-[#f7f7f7] font-bold">Our <span class="">Process</span></h2>
-                </div>
+                </motion.div>
                 <motion.div
                     className="h-[1000px] w-[8px] bg-[#ffffff13] ml-6 min-[1220px]:m-auto relative rounded-full"
                     ref={ref}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+
+                    }}
                 >
                     <motion.div
                         className="top-0 left-0 w-full h-1 rounded-full absolute"
@@ -68,6 +78,7 @@ function Steps() {
                             background: toGradient,
                             height: toFullHeight,
                         }}
+
                     >
 
                         <motion.div

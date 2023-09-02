@@ -64,10 +64,10 @@ function Main(props) {
       {props.darkMode ?
         <div className='absolute top-0 left-0 w-full h-full z-10 dark-testing-top opacity-70'></div>
         : null}
-      <div id='main' className='overflow-hidden	 vanta font-display flex justify-center items-center h-[100dvh] min-h-[100dvh] dark:text-[#f7f7f7]'>
+      <div id='main' className='overflow-hidden	 vanta font-display flex justify-center items-center min-h-[100svh] dark:text-[#f7f7f7]'>
         <div className='z-20 flex flex-col justify-center items-center sm:gap-14'>
-          <div className='flex flex-col'>
-            <Link to='/automations' className='mb-7 md:mb-10 main-automation-button overflow-hidden backdrop-blur-[6px] rounded-[32px] mx-auto py-[4px] px-[13px] flex relative w-max text-[14px] leading-5'>
+          <div className='flex flex-col gap-8'>
+            <Link to='/automations' className='main-automation-button overflow-hidden backdrop-blur-[6px] rounded-[32px] mx-auto py-[4px] px-[13px] flex relative w-max text-[14px] leading-5'>
               <img src={Shine} className='w-[18px] h-[18px] mr-[6px]' alt='shine-icon' />
               <div className='main-automation-button-text'>New: AI integrations just landed!</div>
             </Link>

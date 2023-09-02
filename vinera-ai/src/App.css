@@ -1166,6 +1166,10 @@
   flex-shrink: 0;
 }
 
+.metalic-text {
+  background-image: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.70) 100%);
+}
+
 .automation-animation-logo-box {
   position: absolute;
   inset: 0px;

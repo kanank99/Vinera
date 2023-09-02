@@ -1219,7 +1219,7 @@ function AutomationsAnimation() {
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF] text-[14px] leading-4 tracking-[0.3em] uppercase mb-[24px] font-semibold'>
                     Automations
                 </span>
-                <h1 className='text-[#1c1c1c] dark:text-[#ffffff] text-[36px] leading-[1.3] tracking-tight font-bold text-center max-w-[80%]'>
+                <h1 className='text-transparent bg-clip-text metalic-text text-[36px] leading-[1.3] tracking-tight font-bold text-center max-w-[80%]'>
                     The agency for modern AI development
                 </h1>
                 <div>
