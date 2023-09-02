@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import HeaderHome from './HeaderHome';
 import Main from './Main';
 import Whyus from './Whyus';
@@ -15,8 +15,18 @@ import Newsletter from './Newsletter';
 import Benefits from './Benefits';
 import AutomationsAnimation from './AutomationsAnimation';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 function Home(props) {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            let elem = document.getElementById(location.hash.slice(1))
+            if (elem) elem.scrollIntoView({ behavior: 'smooth' })
+        }
+    }, [location]);
 
     const ref = useRef(null)
 

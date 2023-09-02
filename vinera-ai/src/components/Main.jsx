@@ -3,7 +3,8 @@ import Typed from 'typed.js';
 import BIRDS from 'vanta/dist/vanta.birds.min.js'
 import StarDay from '../assets/images/star-day-icon.svg';
 import StarNight from '../assets/images/star-night-icon.svg';
-import { PopupButton } from 'react-calendly';
+import { PopupButton } from 'react-calendly'
+
 
 function Main(props) {
 

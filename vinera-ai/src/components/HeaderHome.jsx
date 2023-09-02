@@ -69,7 +69,7 @@ function HeaderHome(props) {
             <Link to='/contact' className='p-[14px] text-[14px] hover:text-white/50 transition-colors duration-200 tracking-[0.2px] font-medium'>
                 Contact
             </Link>
-            <div className='bg-[#171719] border border-white/0 hover:border-white/25 transition-colors duration-200 rounded-[32px] py-[6px] px-[16px] flex items-center justify-center font-normal leading-[24px]'>
+            <div className='bg-[#574eff] border border-white/0 hover:border-white/25 transition-colors duration-200 rounded-[32px] py-[6px] px-[16px] flex items-center justify-center font-normal leading-[24px]'>
                 <div className='relative z-10'>
                     <PopupButton
                         url="https://calendly.com/vineraautomations/discoverycall"
