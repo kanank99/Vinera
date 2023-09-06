@@ -58,7 +58,7 @@ function HeaderHome(props) {
 
         >
             <a href='#steps' className='p-[14px] text-[14px] hover:text-white/50 transition-colors duration-200 tracking-[0.2px] font-medium'>
-                Solutions
+                Process
             </a>
             <Link to='/automations' className='p-[14px] text-[14px] hover:text-white/50 transition-colors duration-200 tracking-[0.2px] font-medium'>
                 Automations

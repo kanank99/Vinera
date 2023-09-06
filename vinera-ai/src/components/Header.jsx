@@ -22,7 +22,7 @@ function Header(props) {
                     <Link to='/'> <img src={VineraTransparent} alt='logo' className='w-44 h-44 pt-5' /> </Link>
                 </div>
                 <div className='hidden lg:flex lg:gap-10 lg:items-center lg:justify-center z-10'>
-                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><Link to='/#steps' className='tracking-tight'>Solutions</Link>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
+                    <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center gap-2'><Link to='/#steps' className='tracking-tight'>Process</Link>{/*<img src={Dropdown} alt='dropdown' className='w-5 h-5 transition-all hover:rotate-180' />*/}</div>
                     <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><Link to='/automations' className='relative z-10 tracking-tight'>Automations</Link></div>
                     <div className='text-xl text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] h-full transition-all cursor-pointer flex justify-center items-center'><Link to='/#pricing' className='relative z-10 tracking-tight'>Memberships</Link></div>
                     <div className='hidden lg:flex text-[#313435] dark:text-[#f7f7f7] dark:hover:text-[#8a8f98] transition-all text-xl h-full cursor-pointer justify-center items-center'><Link to='/contact' className='relative z-10 tracking-tight'>Contact</Link></div>

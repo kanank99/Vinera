@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Integrations from './Integrations';
 import AutomationsHeader from './AutomationsHeader';
 import AutomationsLists from './AutomationsLists';
@@ -33,7 +34,19 @@ function Automations(props) {
             behavior: 'instant'
         })
 
+
+
     }, [])
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            let elem = document.getElementById(location.hash.slice(1))
+            if (elem) elem.scrollIntoView({ behavior: 'smooth' })
+        }
+    }, [location]);
+
 
     return (
         <div className='bg-[#060606]'>

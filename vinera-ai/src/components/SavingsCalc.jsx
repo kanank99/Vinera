@@ -168,7 +168,7 @@ function SavingsCalc() {
                     {/* <!-- Card Section --> */}
                     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 mx-auto">
                         {/* <!-- Grid --> */}
-                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                             {/* <!-- Card --> */}
                             <div class="flex flex-col gap-y-3 lg:gap-y-5 p-4 md:p-8 bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
                                 <div class="inline-flex justify-center items-center">
@@ -177,7 +177,7 @@ function SavingsCalc() {
                                 </div>
 
                                 <div class="text-center">
-                                    <h3 class="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
+                                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
                                         {totalSavings}
                                     </h3>
                                 </div>
@@ -193,7 +193,7 @@ function SavingsCalc() {
                                 </div>
 
                                 <div class="text-center">
-                                    <h3 class="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
+                                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
                                         {vineraCost}
                                     </h3>
                                 </div>
@@ -210,7 +210,7 @@ function SavingsCalc() {
                                 </div>
 
                                 <div class="text-center">
-                                    <h3 class="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
+                                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
                                         {savingPercentage}%
                                     </h3>
                                 </div>
@@ -226,7 +226,7 @@ function SavingsCalc() {
                                 </div>
 
                                 <div class="text-center">
-                                    <h3 class="text-3xl sm:text-4xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
+                                    <h3 class="translate-y-4 sm:translate-x-0 text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
                                         {totalSavingsAmount}
                                     </h3>
                                 </div>

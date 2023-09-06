@@ -13,7 +13,7 @@ function AutomationsLists() {
             <div className='flex flex-col items-start'>
                 <div className='text-[#f7f8f8] text-[24px] leading-[1.4] tracking-[-0.019px]'><a id="customer-service" rel="noopener" href="/automations#customer-service">Customer Service</a></div>
                 <div className='text-[#8a8f98] mt-[4px] mb-[32px] leading-[1.6] tracking-[-0.011px] font-normal text-left'>Elevate customer satisfaction with personalized support</div>
-                <div className='w-full'>
+                <div id="customer-service" className='w-full'>
                     <ul className='automation-list-grid' data-overflow-hidden={dontShowCustomerService}>
                         <AutomationListItem
                             name="Zendesk"
@@ -102,7 +102,7 @@ function AutomationsLists() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-start '>
+            <div id="lead-generation" className='flex flex-col items-start '>
                 <div className='text-[#f7f8f8] text-[24px] leading-[1.4] tracking-[-0.019px] mt-[72px] max-[700px]:mt-[48px]'><a id="lead-generation" rel="noopener" href="/automations#lead-generation">Lead Generation</a></div>
                 <div className='text-[#8a8f98] mt-[4px] mb-[32px] leading-[1.6] tracking-[-0.011px] font-normal text-left'>Power up your pipeline with high-quality leads</div>
                 <div className='w-full'>
@@ -196,7 +196,7 @@ function AutomationsLists() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-start '>
+            <div id="data" className='flex flex-col items-start '>
                 <div className='text-[#f7f8f8] text-[24px] leading-[1.4] tracking-[-0.019px] mt-[72px] max-[700px]:mt-[48px]'><a id="data" rel="noopener" href="/automations#data">Data</a></div>
                 <div className='text-[#8a8f98] mt-[4px] mb-[32px] leading-[1.6] tracking-[-0.011px] font-normal text-left'>Unlock insights with clean and comprehensive data</div>
                 <div className='w-full'>
@@ -238,7 +238,7 @@ function AutomationsLists() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-start '>
+            <div id="marketing" className='flex flex-col items-start '>
                 <div className='text-[#f7f8f8] text-[24px] leading-[1.4] tracking-[-0.019px] mt-[72px] max-[700px]:mt-[48px]'><a id="marketing" rel="noopener" href="/automations#marketing">Marketing</a></div>
                 <div className='text-[#8a8f98] mt-[4px] mb-[32px] leading-[1.6] tracking-[-0.011px] font-normal text-left'>Amplify your brand’s presence with targeted strategies</div>
                 <div className='w-full'>
@@ -334,7 +334,7 @@ function AutomationsLists() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-start '>
+            <div id="process-automations" className='flex flex-col items-start '>
                 <div className='text-[#f7f8f8] text-[24px] leading-[1.4] tracking-[-0.019px] mt-[72px] max-[700px]:mt-[48px]'><a id="process-automations" rel="noopener" href="/automations#process-automations">Process Automations</a></div>
                 <div className='text-[#8a8f98] mt-[4px] mb-[32px] leading-[1.6] tracking-[-0.011px] font-normal text-left'>Eliminate tedious tasks with automation</div>
                 <div className='w-full'>

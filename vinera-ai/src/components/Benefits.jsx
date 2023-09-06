@@ -20,7 +20,7 @@ function Benefits() {
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Customer Service</h2>
                             <p class="mb-4">Transform your customer service with instant and accurate responses 24/7, ensuring that no inquiry goes unanswered, in any language. These are automatically implemented through existing tools.</p>
                             <div class="inline-block w-[65%] lg:w-[42%] mt-5 py-3 text-sm font-semibold text-white transition duration-200 bg-[#574eff] rounded-full hover:bg-[#3537a0] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">
-                                <Link to='/automations'> Discover Customer Service </Link>
+                                <Link to='/automations#customer-service'> Discover Customer Service </Link>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-8">
@@ -38,7 +38,7 @@ function Benefits() {
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Lead Generation</h2>
                             <p class="mb-4">Detect and engage with potential customers, refining your lead generation into a highly efficient system. It helps filter leads more effectively to ensure smoother customer interaction and reduce churn rate.</p>
                             <div class="inline-block w-[60%] lg:w-[42%] mt-5 py-3 text-sm font-semibold text-white transition duration-200 bg-[#574eff] rounded-full hover:bg-[#3537a0] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">
-                                <Link to='/automations'>Discover Lead Generation</Link>
+                                <Link to='/automations#lead-generation'>Discover Lead Generation</Link>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-8">
@@ -56,7 +56,7 @@ function Benefits() {
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Data</h2>
                             <p class="mb-4">Power strategies with AI, leverage data for insights, and confidently drive your business forward. Enable non-technical staff to use natural language for instant data queries.</p>
                             <div class="inline-block w-[50%] lg:w-[30%] mt-5 py-3 text-sm font-semibold text-white transition duration-200 bg-[#574eff] rounded-full hover:bg-[#3537a0] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">
-                                <Link to='/automations'>Discover Data</Link>
+                                <Link to='/automations#data'>Discover Data</Link>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-8">
@@ -74,7 +74,7 @@ function Benefits() {
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Marketing</h2>
                             <p class="mb-4">Produce platform-tailored, branded content that engages your audience and increases traffic, while partially automating your CRM, SEO, and PPC with GPT to enhance content creation.</p>
                             <div class="inline-block w-[60%] lg:w-[35%] mt-5 py-3 text-sm font-semibold text-white transition duration-200 bg-[#574eff] rounded-full hover:bg-[#3537a0] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">
-                                <Link to='/automations'>Discover Marketing</Link>
+                                <Link to='/automations#marketing'>Discover Marketing</Link>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-8">
@@ -92,7 +92,7 @@ function Benefits() {
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Process Automation</h2>
                             <p class="mb-4">Use AI to streamline routine tasks, freeing up your team's bandwidth. This allows them to concentrate on high-priority projects, leading to a notable increase in both productivity and efficiency.</p>
                             <div class="inline-block w-[70%] lg:w-[50%] mt-5 py-3 text-sm font-semibold text-white transition duration-200 bg-[#574eff] rounded-full hover:bg-[#3537a0] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">
-                                <Link to='/automations'>Discover Process Automation</Link>
+                                <Link to='/automations#process-automations'>Discover Process Automation</Link>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4 mt-8">
