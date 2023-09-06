@@ -62,20 +62,20 @@ function Main(props) {
   return (
     <>
       {props.darkMode ?
-        <div className='absolute top-0 left-0 w-full h-full z-10 dark-testing-top opacity-70'></div>
+        <div className='absolute top-0 left-0 w-full min-h-[600px] sm:h-[875px] lg:min-h-[960px] z-10 dark-testing-top opacity-70'></div>
         : null}
-      <div id='main' className='overflow-hidden	 vanta font-display flex justify-center items-center min-h-[100svh] dark:text-[#f7f7f7]'>
-        <div className='z-20 flex flex-col justify-center items-center sm:gap-14'>
-          <div className='flex flex-col gap-8'>
-            <Link to='/automations' className='main-automation-button overflow-hidden backdrop-blur-[6px] rounded-[32px] mx-auto py-[4px] px-[13px] flex relative w-max text-[14px] leading-5'>
+      <div id='main' className='overflow-hidden	 vanta font-display flex justify-center items-center dark:text-[#f7f7f7] min-h-[600px] sm:h-[875px] lg:min-h-[950px]'>
+        <div className='z-20 flex flex-col justify-center items-center gap-8 sm:gap-14 lg:gap-18'>
+          <div className='flex flex-col justify-center items-center gap-12'>
+            <Link to='/automations' className='main-automation-button overflow-hidden backdrop-blur-[6px] rounded-[32px] mx-auto py-[8px] px-[13px] flex w-max text-[14px] leading-5'>
               <img src={Shine} className='w-[18px] h-[18px] mr-[6px]' alt='shine-icon' />
               <div className='main-automation-button-text'>New: AI integrations just landed!</div>
             </Link>
-            <p className='text-4xl h-60 sm:text-6xl leading-snug sm:leading-snug font-bold text-center mx-auto dark:text-[#f7f7f7]'>Develop <span className='text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600'>AI</span> Powered <span className='text-transparent bg-clip-text bg-gradient-to-t from-green-800 to-green-100 dark:from-[#455eb5] dark:to-purple-600'>Automated</span> <br /> <span ref={ele} /></p>
+            <p className='text-4xl sm:text-6xl leading-snug sm:leading-snug font-bold text-center mx-auto dark:text-[#f7f7f7]'>Develop <span className='text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600'>AI</span> Powered <span className='text-transparent bg-clip-text bg-gradient-to-t from-green-800 to-green-100 dark:from-[#455eb5] dark:to-purple-600'>Automated</span> <br /> <span ref={ele} /></p>
           </div>
-          <p className=' pt-5 md:pt-0 text-center leading-snug w-[90%] text-2xl font-normal dark:text-[#b4bcd0]' >Leverage Vinera AI to <span className='font-semibold dark:text-[#f7f7f7]'>automate tasks</span>, eradicate manual work, and achieve <span className='font-semibold dark:text-[#f7f7f7]'>significant cost savings</span>.</p>
+          <p className='text-center leading-snug w-[90%] text-lg md:text-xl lg:text-2xl font-normal dark:text-[#b4bcd0]' >Leverage Vinera AI to <span className='font-semibold dark:text-[#f7f7f7]'>automate tasks</span>, eradicate manual work, and achieve <span className='font-semibold dark:text-[#f7f7f7]'>significant cost savings</span>.</p>
           <div className='text-center leading-snug w-[90%] text-2xl font-normal flex justify-center items-center gap-2 pt-5 sm:pt-0' >
-            <div class="flex -space-x-2">
+            <div class="hidden sm:flex -space-x-2">
               <img class="inline-block h-[2.375rem] w-[2.375rem] rounded-full ring-2 ring-[#561eff]" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt='person-1' />
               <img class="inline-block h-[2.375rem] w-[2.375rem] rounded-full ring-2 ring-[#561eff]" src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="person-2" />
               <img class="inline-block h-[2.375rem] w-[2.375rem] rounded-full ring-2 ring-[#561eff]" src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80" alt="person-3" />
@@ -88,7 +88,7 @@ function Main(props) {
             <p className='hidden md:block tracking-tight text-base place-self-end dark:text-[#b4bcd0]'>(based on client reviews)</p>
           </div>
           <div className='flex gap-10'>
-            <a href='#calendly' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center button-gradient`}>
+            <a href='#calendly' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-4 lg:mt-8 sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center button-gradient`}>
               <div className='relative z-10 font-semibold'>
                 <PopupButton
                   url="https://calendly.com/vineraautomations/discoverycall"
@@ -101,12 +101,12 @@ function Main(props) {
                 />
               </div>
             </a>
-            <a href='#benefits' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-20 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
+            <a href='#benefits' className={`${props.darkMode ? 'glow-button-dark' : 'glow-button'} select-none mt-4 lg:mt-8 bg-transparent sm:mt-0 text-xl p-3 rounded-full h-full transition hover:scale-[1.02] cursor-pointer flex justify-center items-center border-2`}>
               <div className='relative z-10 font-semibold'>Learn More</div>
             </a>
           </div>
         </div>
-        <div className='absolute h-full w-full' id='vanta' ref={vantaRef}></div>
+        <div className='absolute h-full max-h-[850px] lg:min-h-[960px] w-full' id='vanta' ref={vantaRef}></div>
       </div >
     </>
   )
