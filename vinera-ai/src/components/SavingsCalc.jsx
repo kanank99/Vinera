@@ -226,7 +226,7 @@ function SavingsCalc() {
                                 </div>
 
                                 <div class="text-center">
-                                    <h3 class="translate-y-4 sm:translate-x-0 text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
+                                    <h3 class="translate-y-4 sm:translate-y-0 text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-200">
                                         {totalSavingsAmount}
                                     </h3>
                                 </div>
