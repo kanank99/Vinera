@@ -5,15 +5,21 @@ import Notion from '../assets/images/notion-img.png';
 // import Vinera from '../assets/images/vinera-white.png';
 import VineraTransparent from '../assets/images/vinera-purple-transparent.png';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 // import Integrations from './Integrations';
 
 function AutomationsAnimation() {
     return (
         <div className='bg-[#060606]'>
             <hr className='border-[#27282B] w-[90%] max-w-[1200px] m-auto' />
-            <div className="flex justify-center bg-[#060606]">
+            <motion.div className="flex justify-center bg-[#060606]"
+                initial={{ opacity: 0, }}
+                whileInView={{ opacity: 1, }}
+                transition={{
+                    duration: 1.4,
+                }} >
                 {/* <Integrations darkMode={props.darkMode} /> */}
-                <div className='relative overflow-hidden mb-[46px] animation-box mt-16'>
+                < div className='relative overflow-hidden mb-[46px] animation-box mt-16'>
                     <div className='animation-box-shadow-bottom'></div>
                     <div className='automation-animation-logo-box w-[120px] h-[120px] backdrop-blur-[4px]'>
                         <img className='automation-animation-logo' data-animate="" decoding="async" src={VineraTransparent} alt="Linear logo" width="400" height="400" class="sc-25c6891f-3 bXmhxr" />
@@ -1213,27 +1219,52 @@ function AutomationsAnimation() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div >
 
             <div className='max-w-[666px] m-auto flex flex-col items-center justify-center font-display'>
-                <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF] text-[14px] leading-4 tracking-[0.3em] uppercase mb-[24px] font-semibold'>
+                <motion.span className='text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-green-400 dark:from-[#BE05FF] dark:via-[#A954FF] dark:to-[#A771FF] text-[14px] leading-4 tracking-[0.3em] uppercase mb-[24px] font-semibold'
+                    initial={{ opacity: 0, y: 25, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{
+                        duration: 0.4,
+
+                    }}>
                     Automations
-                </span>
-                <h1 className='text-transparent bg-clip-text metalic-text text-[36px] leading-[1.3] tracking-tight font-bold text-center max-w-[80%]'>
+                </motion.span>
+                <motion.h1 className='text-transparent bg-clip-text metalic-text text-[36px] leading-[1.3] tracking-tight font-bold text-center max-w-[80%]'
+                    initial={{ opacity: 0, y: 25, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{
+                        duration: 0.4,
+
+                    }}>
                     The agency for modern AI development
-                </h1>
+                </motion.h1>
                 <div>
-                    <p className='text-[#4a4a4a] dark:text-[#d0d6e0] text-[18px] leading-[1.7] text-center mt-[24px] tracking-[-0.014px]'>
-                        With our opinionated workflows, Vinera unlocks your business full potential. It is the agency of choice for high-performance teams.</p>
+                    <motion.p className='text-[#4a4a4a] dark:text-[#d0d6e0] text-[18px] leading-[1.7] text-center mt-[24px] tracking-[-0.014px]'
+                        initial={{ opacity: 0, y: 25, scale: 0.9 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{
+                            duration: 0.4,
+
+                        }}>
+                        With our opinionated workflows, Vinera unlocks your business full potential. It is the agency of choice for high-performance teams.
+                    </motion.p>
                 </div>
-                <div className='mt-[32px] mb-[38px] flex flex-row justify-center'>
+                <motion.div className='mt-[32px] mb-[38px] flex flex-row justify-center'
+                    initial={{ opacity: 0, y: 25, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{
+                        duration: 0.4,
+
+                    }}>
                     <Link to={{ pathname: '/automations', hash: "#" }} className='flex items-center h-[28px] text-[#d0d6e0] text-[13px] backdrop-blur-[12px] font-medium whitespace-nowrap px-[12px] bg-[#ffffff1A] hover:bg-[#ffffff33] transition-all border border-solid border-[#ffffff0D] rounded-full cursor-pointer'>
                         <div>Discover Integrations</div>
                         <svg className='ml-[4px]' width="16" height="16" viewBox="0 0 16 16" fill="#b4bcd099"><path d="M5.46967 11.4697C5.17678 11.7626 5.17678 12.2374 5.46967 12.5303C5.76256 12.8232 6.23744 12.8232 6.53033 12.5303L10.5303 8.53033C10.8207 8.23999 10.8236 7.77014 10.5368 7.47624L6.63419 3.47624C6.34492 3.17976 5.87009 3.17391 5.57361 3.46318C5.27713 3.75244 5.27128 4.22728 5.56054 4.52376L8.94583 7.99351L5.46967 11.4697Z"></path></svg>
                     </Link>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </div >
     )
 }
 

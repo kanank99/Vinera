@@ -53,11 +53,11 @@ function Steps() {
         <div id='steps' className='bg-[#000212] font-display hidden min-[1220px]:block grid-bg pt-[50px]'>
             <div className='mx-auto min-[1220px]:mx-0'>
                 <motion.div className='flex flex-col items-center justify-center pb-40 pt-4'
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 25, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{
-                        duration: 0.4,
-
+                        duration: 0.6,
+                        delay: 0.1
                     }}>
                     <h1 class="px-4 font-md text-[1.5rem] tracking-[0.1em] uppercase mb-[24px] font-md text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">YOUR ROADMAP TO SUCCESS</h1>
                     <h2 class="text-6xl text-[#f7f7f7] font-bold">Our <span class="">Process</span></h2>
@@ -68,8 +68,8 @@ function Steps() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{
-                        duration: 0.6,
-
+                        duration: 1,
+                        delay: 0.1
                     }}
                 >
                     <motion.div

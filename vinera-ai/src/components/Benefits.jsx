@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 function Benefits() {
     return (
@@ -9,10 +10,16 @@ function Benefits() {
             <div className='benefits-circle-gradient-right'></div>
             <div className='benefits-circle-gradient-left-2'></div>
             {/* Header */}
-            <div className='flex flex-col items-center justify-center py-16 pt-16 lg:py-28'>
+            <motion.div className='flex flex-col items-center justify-center py-16 pt-16 lg:py-28'
+                initial={{ opacity: 0, y: 25, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{
+                    duration: 0.6,
+                    delay: 0.1
+                }}>
                 <h1 class="px-4 mb-10 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl">What advantages can <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">AI</span> offer your <span class="text-transparent bg-clip-text bg-gradient-to-tr from-green-200 to-green-800 dark:from-[#455eb5] dark:to-purple-600">team</span>?</h1>
                 <p class="text-lg font-normal text-gray-500 lg:text-2xl dark:text-gray-400 px-4 lg:w-[60%] leading-8">Discover how AI and Automation free up your team from repetitive tasks, allowing more concentration on essential work.</p>
-            </div>
+            </motion.div>
             <div className='min-h-[500px] dark-testing-middle-benefit-left top-0 sticky'>
                 <section class="">
                     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:px-6">
