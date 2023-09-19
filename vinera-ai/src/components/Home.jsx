@@ -41,8 +41,8 @@ function Home(props) {
             {/* <Integrations darkMode={props.darkMode} /> */}
             <AutomationsAnimation darkMode={props.darkMode} />
             <OurTeam darkMode={props.darkMode} />
-            <Pricing darkMode={props.darkMode} />
-            <SavingsCalc darkMode={props.darkMode} />
+            {/* <Pricing darkMode={props.darkMode} /> */}
+            {/* <SavingsCalc darkMode={props.darkMode} /> */}
             <Calendly darkMode={props.darkMode} />
             <Faq darkMode={props.darkMode} />
             <Newsletter darkMode={props.darkMode} setShowAlert={props.setShowAlert} />
